@@ -19,7 +19,7 @@
 
 .image {
 	min-height: 680px;
-	background: url(../images/background1.png) center center;
+	background: url(../images/bg.jpg) center center;
 	background-size: cover;
 }
 
@@ -77,9 +77,11 @@ a, li {
 	font-weight: 300;
 }
 
+/*
 .nav li span {
 	display: block;
 }
+*/
 
 .nav a {
 	display: block;
@@ -127,10 +129,22 @@ a, button {
 		position: absolute;
 	}
 	
-	/* Transforms the list into a horizontal navigation */
-	
 	.nav li {
 		float: left;
+		height: $brickHeight * 2;
+		display: block;
+	}
+	
+	/*
+	.nav li li:nth-child(0):before {
+		clear: both;
+	}
+	*/
+
+	/* Transforms the list into a horizontal navigation */
+
+	.nav li li {
+		//float: left;
 		width: $brickWidth;
 		height: $brickHeight;
 		margin: $brickBorderWidth $brickBorderWidth;
@@ -142,13 +156,13 @@ a, button {
 		transition: border .5s;
 	}
 	
-	.nav li .visible{
+	.nav li li .visible{
 		width: $brickWidth;
 		height: $brickHeight;
 		background: $turquoise;
 	}
 
-	.nav li .active {
+	.nav li li .active {
 		width: $brickWidth;
 		height: $brickHeight;
 		background: $greenSea;
@@ -161,10 +175,19 @@ a, button {
 	}
 
 
-	.nav li span, 
-	.nav li span .icon {
+	.nav li li span, 
+	.nav li li span .icon {
 		display: inline-block;
 		margin: 0 0;
+	}
+/*
+	.nav li li:last-child :after{
+		clear: both;
+	}
+*/
+	.nav li li:last-child:after {
+		content: '\A';
+		white-space: pre;
 	}
 	
 	/* Placing the icon */
