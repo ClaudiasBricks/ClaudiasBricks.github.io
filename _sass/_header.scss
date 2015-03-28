@@ -19,7 +19,7 @@
 
 .image {
 	min-height: 680px;
-	background: url(../images/bg5.png) center center;
+	background: url(../images/bg6.png) center center;
 	background-size: cover;
 }
 
@@ -111,13 +111,15 @@ a, button {
 
 /* Hover effect for the whole navigation to make the hovered item stand out */
 
-.no-touch .nav  ul:hover  a  {
+
+.no-touch  ul:hover ul:hover a  {
 	color: rgba(249, 249, 249, .4);
 }
 
-.no-touch .nav ul:hover  a:hover {
+.no-touch  ul:hover ul:hover a:hover  {
 	color: rgba(249, 249, 249, 1);
 }
+
 
 
 
@@ -282,12 +284,35 @@ a, button {
 /* CSS specific to the 2x3 columns version */
 
 @media (min-width:32.5em) and (max-width: 49.938em) {
-	
+	.nav {
+		float: left;
+	}
+
 	/* Creating the 2 column layout using floating elements once again */
 	.nav li {
 		display: block;
 		float: left;
-		width: 50%;
+		height: 7em;
+		//width: 50%;
+	}
+
+	.nav li li a{
+		float: left;
+		visibility: visible;
+		width: 7em;
+		height: 7em;
+	}
+	
+	.nav li li {
+		visibility: hidden;
+		width: auto;
+		height: auto;
+	}
+	
+	.nav img{
+		visibility: hidden;
+		width: 0;
+		height: auto;
 	}
 	
 	/* Adding some padding to make the elements look nicer */
