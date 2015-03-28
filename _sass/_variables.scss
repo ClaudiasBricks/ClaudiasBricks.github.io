@@ -5,16 +5,18 @@
 
 // Colors
 $blue:      #4183C4;
-//$turquoise: #1abc9c;
-$turquoise: #55c392;
-$greenSea:  #16a085;
+$brickMainColor: #1abc9c;
+//$brickMainColor: #55c392;
+//$brickMainColor: #18c3cf;
+//$brickHighlightColor:  #16a085;
+$brickHighlightColor:  #fe7002;;
 $emerald:   #2ecc71;
 $nephritis: #27ae60;
 
 // Bricks
 $brickWidth:       7em;
 $brickHeight:      7em;
-$halfBrickHeight:  9em;
+$bottomFirstBricks:5em;
 $brickFont:        1.6em;
 $brickBorderWidth: 0em;
 

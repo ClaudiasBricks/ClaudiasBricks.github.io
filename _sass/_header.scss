@@ -19,7 +19,7 @@
 
 .image {
 	min-height: 680px;
-	background: url(../images/bg.jpg) center center;
+	background: url(../images/bg5.png) center center;
 	background-size: cover;
 }
 
@@ -67,16 +67,16 @@ a, li {
 }
 
 /* Global CSS that are applied for all screen sizes */
-
+/*
 .nav ul {
-	max-width: 1240px;
-	margin: auto;
+	//max-width: 1240px;
+	margin: 0;
 	padding: 0;
 	list-style: none;
 	font-size: 1em;
 	font-weight: 300;
 }
-
+*/
 /*
 .nav li span {
 	display: block;
@@ -111,11 +111,11 @@ a, button {
 
 /* Hover effect for the whole navigation to make the hovered item stand out */
 
-.no-touch .nav ul:hover a {
+.no-touch .nav  ul:hover  a  {
 	color: rgba(249, 249, 249, .4);
 }
 
-.no-touch .nav ul:hover a:hover {
+.no-touch .nav ul:hover  a:hover {
 	color: rgba(249, 249, 249, 1);
 }
 
@@ -123,71 +123,81 @@ a, button {
 
 /* For screen bigger than 800px */
 @media (min-width: 50em) {
-	
+
 	.nav {
-		margin-top: 0;
+		margin: 0;
+		padding: 0;
 		position: absolute;
+		width: 100%;
+		
+		ul {
+			margin: 0;
+			padding: 0;
+		}
+		
+		li:first-child  {
+			margin-bottom: $bottomFirstBricks;
+		}
+
+		li {
+			float: center;
+			height: $brickHeight;
+			display: block;
+			
+			/* This centers the horizontal list */
+			
+			ul {
+				display: table;
+				margin: 0 auto;
+			}
+
+			/* Transforms 2nd the list into a horizontal navigation */
+
+			li {
+				float: left;
+				display:inline-block;
+				width: $brickWidth;
+				height: $brickHeight;
+				text-align: center;
+				-webkit-transition: border .5s;
+				-moz-transition: border .5s;
+				-o-transition: border .5s;
+				-ms-transition: border .5s;
+				transition: border .5s;
+				
+				.visible {
+					width: $brickWidth;
+					height: $brickHeight;
+					background: $brickMainColor;
+				}
+				
+				.active {
+					width: $brickWidth;
+					height: $brickHeight;
+					background: $brickHighlightColor;
+				}
+			}
+		}
 	}
-	
-	.nav li {
-		float: left;
-		height: $brickHeight * 2;
-		display: block;
-	}
-	
 	/*
-	.nav li li:nth-child(0):before {
-		clear: both;
+	.containerlist {
+		position: fixed;
+		width: 100%;
+		height: $brickHeight;
+		background: rgba(0,0,0,0.5);
+		margin: 0 0;
 	}
 	*/
-
-	/* Transforms the list into a horizontal navigation */
-
-	.nav li li {
-		//float: left;
-		width: $brickWidth;
-		height: $brickHeight;
-		margin: $brickBorderWidth $brickBorderWidth;
-		text-align: center;
-		-webkit-transition: border .5s;
-		-moz-transition: border .5s;
-		-o-transition: border .5s;
-		-ms-transition: border .5s;
-		transition: border .5s;
-	}
-	
-	.nav li li .visible{
-		width: $brickWidth;
-		height: $brickHeight;
-		background: $turquoise;
-	}
-
-	.nav li li .active {
-		width: $brickWidth;
-		height: $brickHeight;
-		background: $greenSea;
-	}
-
 	.nav a {
 		display: block;
 		margin: 0 0;
 		text-align: center;
 	}
 
-
 	.nav li li span, 
 	.nav li li span .icon {
 		display: inline-block;
 		margin: 0 0;
-	}
-/*
-	.nav li li:last-child :after{
-		clear: both;
-	}
-*/
-	.nav li li:last-child:after {
-		content: '\A';
-		white-space: pre;
 	}
 	
 	/* Placing the icon */
@@ -255,7 +265,7 @@ a, button {
 	.no-touch .nav ul li a:hover,
 	.no-touch .nav ul li a:active,
 	.no-touch .nav ul li a:focus {
-		background: $greenSea;
+		background: $brickHighlightColor;
 	}
 
 	.nav ul li {
