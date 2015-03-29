@@ -1,0 +1,23 @@
+{% if include.image %}
+
+	<li> 
+		<img class="visible" src={{ include.image }}\>
+	</li>
+
+{% elsif include.linkTarget %}
+
+	<li>
+		<a href={{ include.linkTarget }} class={% if include.active %} "active" {% else %} "visible" {% endif %}> 
+			<span class="icon"> <i class={{ include.linkIcon }}></i> </span>
+			<span class="text">{{ include.linkText }}</span> 
+		</a>
+	</li>
+
+{% else %}
+
+	<li/>
+
+{% endif %}
+
+
+
