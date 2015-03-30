@@ -12,11 +12,11 @@
 									<li> 
 										<img class="visible" src= "{{ brick.image }}" %\>
 									</li>
-								{% elsif brick.linkTarget %}
+								{% elsif brick.target %}
 									<li>
-										<a href={{ brick.linkTarget }} class={% if brick.active  %} "active" {% else %} "visible" {% endif %}> 
-											<span class="icon"> <i class={{ brick.linkIcon }}></i> </span>
-											<span class="text">{{ brick.linkText }}</span> 
+										<a href={{ brick.target }} class={% if brick.active  %} "active" {% else %} "visible" {% endif %} > 
+											<span class="icon"> <i class={{ brick.icon }}></i> </span>
+											<span class="text">{{ brick.text }}</span> 
 										</a>
 									</li>
 								{% else %}

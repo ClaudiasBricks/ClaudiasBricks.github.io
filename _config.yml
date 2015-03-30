@@ -13,28 +13,28 @@ avatar: ../images/avatar.jpg
 
 brickrows:
   - 
-    - {linkTarget: home.html, linkIcon: icon-home, linkText: Home}
+    - {target: home.html, icon: icon-home, text: Home}
     - {}
     - {}
     - {}
     - {}
-    - {linkTarget: "#", linkIcon: icon-contact, linkText: About Claudia}
+    - {target: "#", icon: icon-contact, text: About me}
     - {image: ../images/avatar.jpg}
     - {}
   - 
     - {}
-    - {active: true, linkTarget: services.html, linkIcon: icon-services, linkText: Incubator}
+    - {active: true, target: services.html, icon: icon-services, text: Incubator}
     - {image: ../images/incubatorProxy.png}
     - {image: ../images/fanProxy.png}
     - {}
-    - {active: true, linkTarget: services.html, linkIcon: icon-services, linkText: DNA Staining}
+    - {active: true, target: services.html, icon: icon-services, text: DNA Staining}
     - {image: ../images/dnaStainingProxy.png}
     - {}
   -
     - {}
     - {}
     - {}
-    - {active: true, linkTarget: services.html, linkIcon: icon-services, linkText: Centrifuge}
+    - {active: true, target: services.html, icon: icon-services, text: Centrifuge}
     - {image: ../images/centrifugeProxy.png}
     - {}
     - {}
