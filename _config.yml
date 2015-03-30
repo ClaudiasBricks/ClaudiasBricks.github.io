@@ -11,35 +11,6 @@ description: Biohacking building blocks
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: ../images/avatar.jpg
 
-brickrows:
-  - 
-    - {target: home.html, icon: icon-home, text: Home}
-    - {}
-    - {}
-    - {}
-    - {}
-    - {target: "#", icon: icon-contact, text: About me}
-    - {image: ../images/avatar.jpg}
-    - {}
-  - 
-    - {}
-    - {active: true, target: services.html, icon: icon-services, text: Incubator}
-    - {image: ../images/incubatorProxy.png}
-    - {image: ../images/fanProxy.png}
-    - {}
-    - {active: true, target: services.html, icon: icon-services, text: DNA Staining}
-    - {image: ../images/dnaStainingProxy.png}
-    - {}
-  -
-    - {}
-    - {}
-    - {}
-    - {active: true, target: services.html, icon: icon-services, text: Centrifuge}
-    - {image: ../images/centrifugeProxy.png}
-    - {}
-    - {}
-    - {}
-
 #
 # Flags below are optional
 #
