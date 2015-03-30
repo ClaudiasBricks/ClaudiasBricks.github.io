@@ -1,7 +1,9 @@
 {% if include.image %}
 
 	<li> 
-		<img class="visible" src="{{ include.image }}"\>
+		<!--<img class="visible" src="{{ include.image }}"\> -->
+		
+		<img class="visible" src={% include buildImgSrc.html relpath=include.image %}\>
 	</li>
 
 {% elsif include.linkTarget %}
