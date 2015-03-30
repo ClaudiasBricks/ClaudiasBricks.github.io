@@ -4,53 +4,36 @@
 	<div class="containerlist">
 		<nav id="menu1" class="nav">
 			<ul>
-				<li>
-					<ul>
-						{% include brickli.html linkTarget="home.html" linkIcon="icon-home" linkText="Home" %}
-						{% include brickli.html %}
-						{% include brickli.html %}
-						{% include brickli.html %}
-						{% include brickli.html %}
-						{% include brickli.html linkTarget="#" linkIcon="icon-contact" linkText="About me" %}
-						{% include brickli.html image="avatar.jpg" %}
-						{% include brickli.html %}
-					</ul>
-				</li>
-
-				<li>
-					<ul>
-						{% include brickli.html %}
-						{% include brickli.html active="true" linkTarget="services.html" linkIcon="icon-services" linkText="Incubator" %}
-						{% include brickli.html image="incubatorProxy.png" %}
-						{% include brickli.html image="fanProxy.png" %}
-						{% include brickli.html %}
-						{% include brickli.html active="true" linkTarget="services.html" linkIcon="icon-services" linkText="DNA Staining" %}
-						{% include brickli.html image="dnaStainingProxy.png" %}
-						{% include brickli.html %}
-					</ul>
-				</li>
-				
-				<li>
-					<ul>
-						{% include brickli.html %}
-						{% include brickli.html %}
-						{% include brickli.html %}
-						{% include brickli.html active="true" linkTarget="services.html" linkIcon="icon-services" linkText="Centrifuge" %}
-						{% include brickli.html image="centrifugeProxy.png" %}
-						{% include brickli.html %}
-						{% include brickli.html %}
-						{% include brickli.html %}
-						
-
-<!--<li>
-	<a href="#" class="visible"> <span class="icon"> <i class="icon-blog"></i> </span> <span class="text">My Blog</span> </a>
-</li>-->
-					</ul>
-				</li>
+				{% for bricks in site.brickrows %}
+					<li>
+						<ul>
+							{% for brick in bricks %}
+								{% if brick.image %}
+									<li> 
+										<img class="visible" src= "{{ brick.image }}" %\>
+									</li>
+								{% elsif brick.linkTarget %}
+									<li>
+										<a href={{ brick.linkTarget }} class={% if brick.active  %} "active" {% else %} "visible" {% endif %}> 
+											<span class="icon"> <i class={{ brick.linkIcon }}></i> </span>
+											<span class="text">{{ brick.linkText }}</span> 
+										</a>
+									</li>
+								{% else %}
+									<li/>
+								{% endif %}
+							{% endfor %}
+						</ul>
+					</li>
+				{% endfor %}
 			</ul>
 		</nav>
 	</div>
 </div>
+
+<!--<li>
+	<a href="#" class="visible"> <span class="icon"> <i class="icon-blog"></i> </span> <span class="text">My Blog</span> </a>
+</li>-->
 
 <div class="image">
 </div>
