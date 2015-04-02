@@ -281,15 +281,15 @@ a, button {
 
 @media (max-width: 8 * $brickWidthMedium) {
 	.nav {
-				
 		li:first-child  {
 			margin-bottom: 0;
+			float: center;
 		}
 		
 		li {
 			float: left;
 			min-height: $brickHeightMedium;
-			display: block;
+			display: inline;
 			
 			li {
 				height: $brickHeightMedium;
