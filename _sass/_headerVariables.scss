@@ -22,8 +22,13 @@ $brickHighlightColor:  $orange;
 
 // Brick dimensions
 $brickWidth:       7em;
-$brickHeight:      7em;
-$bottomFirstBricks:5em;
+$brickHeight:      $brickWidth;
+$bottomFirstBricks:3em;
+
+$brickWidthMedium:        5.5em;
+$brickHeightMedium:       $brickWidthMedium;
+$bottomFirstBricksMedium: 2em;
+
 $brickFont:        1.6em;
 $brickBorderWidth: 0em;
 
