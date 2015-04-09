@@ -167,13 +167,11 @@ a, button {
 			.visible {
 				width: $brickWidth;
 				height: $brickHeight;
-				background: $brickMainColor;
 			}
 			
 			.active {
 				width: $brickWidth;
 				height: $brickHeight;
-				background: $brickHighlightColor;
 			}
 		}
 	}

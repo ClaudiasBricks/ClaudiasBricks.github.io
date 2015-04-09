@@ -1,28 +1,40 @@
+
+myemerald:     &myemerald   	"#2ecc71"
+mydarkGreen:   &mydarkGreen 	"#16a085"
+mygreenSea:    &mygreenSea  	"#55c392"
+mynephritis:   &mynephritis 	"#27ae60"
+myturquoise:   &myturquoise 	"#1abc9c"
+mybabyBlue:    &mybabyBlue  	"#18c3cf"
+myblue:        &myblue      	"#4183C4"
+myorange:      &myorange    	"#fe7002"
+mypomegranate: &mypomegranate   "#c0392b"
+myalizarin:    &myalizarin      "#e74c3c"
+
 brickrows:
   - 
-    - {target: home.html, icon: icon-home, text: Home}
+    - {target: "./", icon: icon-home, text: Home, color: *myturquoise}
     - {}
     - {}
     - {}
     - {}
-    - {target: "#", icon: icon-contact, text: About me}
+    - {target: "#", icon: icon-contact, text: About me, color: *mydarkGreen}
     - {image: ../images/avatar.jpg}
     - {}
   - 
     - {}
-    - {active: true, target: services.html, icon: icon-services, text: Incubator}
-    - {image: ../images/incubatorProxy.png}
-    - {image: ../images/fanProxy.png}
+    - {active: true, target: services.html, icon: icon-services, text: Incubator, color: *mypomegranate}
+    - {image: ../images/incubator/incubatorProxy.png}
+    - {image: ../images/incubator/fanProxy.png}
     - {}
-    - {active: true, target: services.html, icon: icon-services, text: DNA Staining}
-    - {image: ../images/dnaStainingProxy.png}
+    - {active: true, target: services.html, icon: icon-services, text: DNA Staining, color: *myorange}
+    - {image: ../images/incubator/dnaStainingProxy.png}
     - {}
   -
     - {}
     - {}
+    - {active: true, target: services.html, icon: icon-services, text: Centrifuge, color: *myalizarin}
+    - {image: ../images/centrifuge/centrifugeProxy.png}
+    - {image: ../images/centrifuge/rotorPrintedProxy.jpg}
     - {}
-    - {active: true, target: services.html, icon: icon-services, text: Centrifuge}
-    - {image: ../images/centrifugeProxy.png}
     - {}
-    - {}
-    - {}
+    - {}	
