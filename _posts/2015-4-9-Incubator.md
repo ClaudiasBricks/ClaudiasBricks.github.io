@@ -30,5 +30,3 @@ I'm very close to finishing the incubator. Too bad the temperature sensor broke,
 <img src="{{ site.baseurl }}/images/incubator/incubator.jpg" width="400" height="400" />
 
 
-
-I feel I would do injustice to Inkscape if I don't mention that it has already helped me in preparing a presentation for my job. In this case I thought it was much easier to convey the message using images, as an image is 1000 words.
