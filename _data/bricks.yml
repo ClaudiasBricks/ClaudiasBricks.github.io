@@ -12,27 +12,27 @@ myalizarin:    &myalizarin      "#e74c3c"
 
 brickrows:
   - 
-    - {target: "./", icon: icon-home, text: Home, color: *myturquoise}
+    - {target: "./", icon: icon-home, text: Home, color: *myalizarin}
     - {}
     - {}
     - {}
     - {}
-    - {target: "#", icon: icon-contact, text: About me, color: *mydarkGreen}
+    - {target: "#", icon: icon-contact, text: About me, color: *myorange}
     - {image: ../images/avatar.jpg}
     - {}
   - 
     - {}
-    - {active: true, target: services.html, icon: icon-services, text: Incubator, color: *mypomegranate}
+    - {active: true, target: services.html, icon: icon-services, text: Incubator, color: *myturquoise}
     - {image: ../images/incubator/incubatorProxy.png}
     - {image: ../images/incubator/fanProxy.png}
     - {}
-    - {active: true, target: services.html, icon: icon-services, text: DNA Staining, color: *myorange}
+    - {active: true, target: services.html, icon: icon-services, text: DNA Staining, color: *mydarkGreen}
     - {image: ../images/incubator/dnaStainingProxy.png}
     - {}
   -
     - {}
     - {}
-    - {active: true, target: services.html, icon: icon-services, text: Centrifuge, color: *myalizarin}
+    - {active: true, target: services.html, icon: icon-services, text: Centrifuge, color: *mypomegranate}
     - {image: ../images/centrifuge/centrifugeProxy.png}
     - {image: ../images/centrifuge/rotorPrintedProxy.jpg}
     - {}
