@@ -16,6 +16,7 @@ Before the academy started, I had bought some Arduino kits on e-bay and tried a 
 
 ####Light and Relay
 The incubator has to maintain a fixed temperature inside and to achieve this the first thing needed is a heat source. In my case the heat source is an infrared bulb connected to the 220 power supply plug and controlled via a relay by Arduino. I was bit worried about this part, so I had someone show me how it's done and I have to admit that now I find it pretty easy. The images below show the test circuit for the relay connected to Arduino and a light bulb and the video captures a test where Arduino turns the light on for 5 seconds and off for 5 seconds and repeats the cycle over and over again as long as it has power: in this case Arduino is connected to my laptop's usb port and the light is plugged in the wall socket. For testing I used a normal light bulb (E27) in place of the infrared bulb.
+
 <img src="{{ site.baseurl }}/images/incubator/relay.jpg" height="315" />
 <iframe width="420" height="315" src="https://www.youtube.com/embed/aVjFg2NNEhs" frameborder="0" allowfullscreen> </iframe>
 
