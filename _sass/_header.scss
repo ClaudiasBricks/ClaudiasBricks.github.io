@@ -232,7 +232,7 @@ a, button {
 	}
 }
 
-@media (min-width: 8 * $brickWidthMedium) and (max-width: 8 * $brickWidth) {
+@media (min-width: 8 * $brickWidthMedium) and (max-width: 8 * $brickWidth + 10) {
 	.nav {
 		li:first-child  {
 			margin-bottom: $bottomFirstBricksMedium;
@@ -267,11 +267,11 @@ a, button {
 	}
 }
 
-@media (max-width: 8 * $brickWidthMedium) {
+@media (max-width: 8 * $brickWidthMedium + 10) {
 	.nav {
 		li:first-child  {
 			margin-bottom: 0;
-			float: center;
+			float: left;
 		}
 		
 		li {
