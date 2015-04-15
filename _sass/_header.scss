@@ -68,22 +68,6 @@ a, li {
 }
 
 /* Global CSS that are applied for all screen sizes */
-/*
-.nav ul {
-	//max-width: 1240px;
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	font-size: 1em;
-	font-weight: 300;
-}
-*/
-/*
-.nav li span {
-	display: block;
-}
-*/
-
 .nav a {
 	display: block;
 	color: rgba(249, 249, 249, .9);
@@ -244,7 +228,7 @@ a, button {
 
 @media (min-height: 700px) {
 	.image {
-		min-height: 860px;
+		min-height: 800px;
 	}
 }
 
