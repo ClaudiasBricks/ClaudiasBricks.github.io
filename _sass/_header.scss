@@ -242,6 +242,12 @@ a, button {
 	transition: box-shadow .4s ease-in-out;
 }
 
+@media (min-height: 700px) {
+	.image {
+		min-height: 860px;
+	}
+}
+
 @media (min-width: 8 * $brickWidthMedium) and (max-width: 8 * $brickWidth) {
 	.nav {
 		li:first-child  {
