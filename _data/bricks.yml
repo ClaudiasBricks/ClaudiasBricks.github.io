@@ -17,9 +17,9 @@ brickrows:
     - {}
     - {}
     - {}
+    - {}
     - {target: "#", icon: icon-contact, text: About me, color: *myorange}
     - {image: ../images/avatar.jpg}
-    - {}
   - 
     - {}
     - {active: true, target: services.html, icon: icon-services, text: Incubator, color: *myturquoise}
