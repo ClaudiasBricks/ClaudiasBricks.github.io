@@ -1,14 +1,16 @@
 
-myemerald:     &myemerald   	"#2ecc71"
-mydarkGreen:   &mydarkGreen 	"#16a085"
-mygreenSea:    &mygreenSea  	"#55c392"
-mynephritis:   &mynephritis 	"#27ae60"
-myturquoise:   &myturquoise 	"#1abc9c"
-mybabyBlue:    &mybabyBlue  	"#18c3cf"
-myblue:        &myblue      	"#4183C4"
-myorange:      &myorange    	"#fe7002"
-mypomegranate: &mypomegranate   "#c0392b"
-myalizarin:    &myalizarin      "#e74c3c"
+myemerald:       &myemerald   	  "#2ecc71"
+mydarkGreen:     &mydarkGreen 	  "#16a085"
+mygreenSea:      &mygreenSea  	  "#55c392"
+mynephritis:     &mynephritis 	  "#27ae60"
+myobservatory:   &myobservatory   "#049372"
+myturquoise:     &myturquoise 	  "#1abc9c"
+mylightSeeGreen: &mylightSeeGreen "#1ba39c"
+mybabyBlue:      &mybabyBlue  	  "#18c3cf"
+myblue:          &myblue      	  "#4183C4"
+myorange:        &myorange    	  "#fe7002"
+mypomegranate:   &mypomegranate   "#c0392b"
+myalizarin:      &myalizarin      "#e74c3c"
 
 brickrows:
   - 
@@ -18,7 +20,7 @@ brickrows:
     - {}
     - {}
     - {}
-    - {target: "#", icon: icon-contact, text: About me, color: *myorange}
+    - {target: "#", icon: icon-blog, text: About me, color: *mypomegranate}
     - {image: ../images/avatar.jpg}
   - 
     - {}
@@ -26,15 +28,24 @@ brickrows:
     - {image: ../images/incubator/incubatorProxy.png}
     - {image: ../images/incubator/fanProxy.png}
     - {}
-    - {active: true, target: services.html, icon: icon-services, text: DNA Staining, color: *mydarkGreen}
+    - {active: true, target: services.html, icon: icon-services, text: DNA Staining, color: *myobservatory}
     - {image: ../images/incubator/dnaStainingProxy.png}
     - {}
   -
-    - {}
-    - {}
-    - {active: true, target: services.html, icon: icon-services, text: Centrifuge, color: *mypomegranate}
     - {image: ../images/centrifuge/centrifugeProxy.png}
     - {image: ../images/centrifuge/rotorPrintedProxy.jpg}
+    - {active: true, target: services.html, icon: icon-services, text: Centrifuge, color: *myobservatory}
+    - {image: ../images/centrifuge/lcdProxy.jpg}
     - {}
     - {}
+    - {image: ../images/magneticStirrer/magneticStirrerProxy.jpg}	
+    - {active: true, target: services.html, icon: icon-services, text: Magnetic Stirrer, color: *mydarkGreen}
+  - 
+    - {}
+    - {active: true, target: services.html, icon: icon-services, text: Spectrometer, color: *myturquoise}
+    - {image: ../images/spectrometer/spectrometerProxy.jpg}
+    - {}
+    - {active: true, target: services.html, icon: icon-services, text: Peristaltic Pump, color: *myobservatory}
+    - {image: ../images/peristalticPump/laserCutterProxy.jpg}	
+    - {image: ../images/peristalticPump/peristalticPumpProxy.jpg}
     - {}	
