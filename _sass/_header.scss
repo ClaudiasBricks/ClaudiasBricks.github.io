@@ -226,7 +226,7 @@ a, button {
 	transition: box-shadow .4s ease-in-out;
 }
 
-@media (min-height: 700px) {
+@media (min-height: 680px) {
 	.image {
 		min-height: 800px;
 	}
@@ -267,7 +267,44 @@ a, button {
 	}
 }
 
-@media (max-width: 8 * $brickWidthMedium + 10) {
+@media (min-width: 8 * $brickWidthSmall) and (max-width: 8 * $brickWidthMedium + 10) {
+	.nav {
+		li:first-child  {
+			margin-bottom: $bottomFirstBricksSmall;
+		}
+		
+		li {
+			height: $brickHeightSmall;
+			
+			li {
+				width: $brickWidthSmall;
+				height: $brickHeightSmall;
+			
+				.visible {
+					width: $brickWidthSmall;
+					height: $brickHeightSmall;
+				}
+					
+				.active {
+					width: $brickWidthSmall;
+					height: $brickHeightSmall;
+				}
+			}
+		}
+	}
+	
+	.nav li  span  {
+		font-size: 0.7em;
+	}
+	
+
+		
+	.nav i {
+		padding: 0;
+	}
+}
+
+@media (max-width: 8 * $brickHeightSmall + 5) {
 	.nav {
 		li:first-child  {
 			margin-bottom: 0;
