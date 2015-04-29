@@ -1,15 +1,23 @@
-<div class="courses">
-	<div class="summary">
-		<h1>Sources of information on Molecular Biology</h1>
-		<p></p>
-	</div>
-	<div class="images">
-		<ul>
-			<li><img src="../images/documentation/edx-logo-header.png"\></li>
-			<li><img src="../images/documentation/edx-logo-header.png"\></li>
-			<li><img src="../images/documentation/edx-logo-header.png"\></li>
-			<li><img src="../images/documentation/edx-logo-header.png"\></li>
-		</ul>
+<div class="courses-container">
+	<div class="courses-section">
+	
+		{% for course in site.data.courses.courses %}
+		
+			<div class="course">
+				<div class="course-logo">
+					<img src="{{ course.img }}" />
+				</div>
+				
+				<div class="course-info">
+					<a href={{ course.href }}> {{ course.title }} </a>
+					
+					<div class="course-details">
+						{{ course.category }} | {{ course.university }}
+					</div>
+				</div>
+			</div>
+			
+		{% endfor %}
+
 	</div>
 </div>
-

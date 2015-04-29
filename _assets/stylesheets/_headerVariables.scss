@@ -2,9 +2,13 @@
 // VARIABLES
 //
 
+
+$bannerBackground: url(/images/bgimage.jpg) center center;
+
+
 // Colors
 
-$backgroundColor: $white;
+$backgroundColor: #fff;
 
 $greenSea:  #55c392;
 $darkGreen: #16a085;
@@ -16,9 +20,6 @@ $babyBlue:  #18c3cf;
 $blue:      #4183C4;
 
 $orange:    #fe7002;
-
-$brickMainColor:       $turquoise;
-$brickHighlightColor:  $orange;
 
 // Brick dimensions
 $brickWidth:       7em;
