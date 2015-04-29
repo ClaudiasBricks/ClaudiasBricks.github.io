@@ -21,31 +21,31 @@ brickrows:
     - {}
     - {}
     - {target: "#", icon: icon-blog, text: About me, color: *mypomegranate}
-    - {image: ../images/avatar.jpg}
+    - {image: /images/avatar.jpg}
   - 
     - {}
     - {active: true, target: services.html, icon: icon-services, text: Incubator, color: *myturquoise}
-    - {image: ../images/incubator/incubatorProxy.png}
-    - {image: ../images/incubator/fanProxy.png}
+    - {image: /images/incubator/incubatorProxy.png}
+    - {image: /images/incubator/fanProxy.png}
     - {}
     - {active: true, target: services.html, icon: icon-services, text: DNA Staining, color: *myobservatory}
-    - {image: ../images/incubator/dnaStainingProxy.png}
+    - {image: /images/incubator/dnaStainingProxy.png}
     - {}
   -
-    - {image: ../images/centrifuge/centrifugeProxy.png}
-    - {image: ../images/centrifuge/rotorPrintedProxy.jpg}
+    - {image: /images/centrifuge/centrifugeProxy.png}
+    - {image: /images/centrifuge/rotorPrintedProxy.jpg}
     - {active: true, target: services.html, icon: icon-services, text: Centrifuge, color: *myobservatory}
-    - {image: ../images/centrifuge/lcdProxy.jpg}
+    - {image: /images/centrifuge/lcdProxy.jpg}
     - {}
     - {}
-    - {image: ../images/magneticStirrer/magneticStirrerProxy.jpg}	
+    - {image: /images/magneticStirrer/magneticStirrerProxy.jpg}	
     - {active: true, target: services.html, icon: icon-services, text: Magnetic Stirrer, color: *mydarkGreen}
   - 
     - {}
     - {active: true, target: services.html, icon: icon-services, text: Spectrometer, color: *myturquoise}
-    - {image: ../images/spectrometer/spectrometerProxy.jpg}
+    - {image: /images/spectrometer/spectrometerProxy.jpg}
     - {}
     - {active: true, target: services.html, icon: icon-services, text: Peristaltic Pump, color: *myobservatory}
-    - {image: ../images/peristalticPump/laserCutterProxy.jpg}	
-    - {image: ../images/peristalticPump/peristalticPumpProxy.jpg}
+    - {image: /images/peristalticPump/laserCutterProxy.jpg}	
+    - {image: /images/peristalticPump/peristalticPumpProxy.jpg}
     - {}	

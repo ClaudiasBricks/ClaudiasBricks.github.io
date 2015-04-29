@@ -19,7 +19,7 @@
 
 .image {
 	min-height: 680px;
-	background: url(../images/bwimage.png) center center;
+	background: $bannerBackground;
 	background-color: $backgroundColor;
 	background-size: cover;
 }
@@ -112,7 +112,10 @@ a, button {
 	padding: 0;
 	position: absolute;
 	width: 100%;
-	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+		
 	ul {
 		margin: 0;
 		padding: 0;
