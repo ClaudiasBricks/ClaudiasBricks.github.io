@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 courses:
   - {
   		img: /images/documentation/waag_logo.png, 
@@ -41,3 +42,22 @@ courses:
   		title: "EE40LX Electronic Interfaces", 
   		category: "Electronics"
   	}  
+=======
+
+biohackacademy:       &biohackacademy
+  - {href: "http://biohackacademy.github.io/", university: Waag Society, title: "Biohack Academy: 10 intense weeks of biohacking"}
+
+molecularbiocourses:       &molecularbiocourses
+  - {href: "./", university: MITx, title: "7.28x Molecular Biology: DNA Replication and Repair"}
+  - {href: "./", university: MITx, title: "7.00x Introduction to Biology - The Secret of Life"}
+  - {href: "https://courses.edx.org/courses/course-v1:KyotoUx+001x+2T2015/info", university: KyotoUx, title: "001x The Chemistry of Life"}
+
+electronicscourses:       &electronicscourses
+  - {href: "./", university: BerkeleyX, title: "EE40LX Electronic Interfaces"}
+
+coursescategories:
+  - {img: /images/documentation/waag_logo.png, title: "Biohacking", courses: *biohackacademy}
+  - {img: /images/documentation/edx-logo-header.png, title: "Electronics", courses: *electronicscourses}
+  - {img: /images/documentation/edx-logo-header.png, title: "Molecular Biology", courses: *molecularbiocourses}
+  
+>>>>>>> af874dd77f1d71b1deed4ea5582663e444f774d1
