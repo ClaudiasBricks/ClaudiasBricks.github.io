@@ -40,4 +40,11 @@ courses:
   		university: BerkeleyX, 
   		title: "EE40LX Electronic Interfaces", 
   		category: "Electronics"
-  	}  
+  	}
+  - {
+  		img: /images/documentation/devtips-logo.jpg, 
+  		href: "https://www.youtube.com/playlist?list=PLqGj3iMvMa4KQZUkRjfwMmTq_f1fbxerI", 
+  		university: DevTips, 
+  		title: "How to build a responsive website from start to finish", 
+  		category: "Websites"
+	}
