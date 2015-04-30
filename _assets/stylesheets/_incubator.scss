@@ -1,0 +1,11 @@
+.incubator-container {
+	height: 500px;
+	display: flex;
+	justify-content: space-around;
+	margin: 0 0;
+	background-color: $babyBlue;
+	
+	img {
+		max-height: 500px;
+	}
+}

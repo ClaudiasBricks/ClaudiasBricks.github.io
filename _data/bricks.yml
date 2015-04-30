@@ -1,51 +1,59 @@
 
-myemerald:       &myemerald   	  "#2ecc71"
-mydarkGreen:     &mydarkGreen 	  "#16a085"
-mygreenSea:      &mygreenSea  	  "#55c392"
-mynephritis:     &mynephritis 	  "#27ae60"
-myobservatory:   &myobservatory   "#049372"
-myturquoise:     &myturquoise 	  "#1abc9c"
-mylightSeeGreen: &mylightSeeGreen "#1ba39c"
-mybabyBlue:      &mybabyBlue  	  "#18c3cf"
-myblue:          &myblue      	  "#4183C4"
-myorange:        &myorange    	  "#fe7002"
-mypomegranate:   &mypomegranate   "#c0392b"
-myalizarin:      &myalizarin      "#e74c3c"
+myEmerald:       &myEmerald   	  "#2ecc71"
+myDarkGreen:     &myDarkGreen 	  "#16a085"
+myGreenSea:      &myGreenSea  	  "#55c392"
+myNephritis:     &myNephritis 	  "#27ae60"
+myObservatory:   &myObservatory   "#049372"
+myTurquoise:     &myTurquoise 	  "#1abc9c"
+myLightSeeGreen: &myLightSeeGreen "#1ba39c"
+
+myBabyBlue:      &myBabyBlue  	  "#00a3c2"
+myDarkBlue:      &myDarkBlue  	  "#00849d"
+myGrayBlue:      &myGrayBlue  	  "#65b4c4"
+myBlue:          &myBlue      	  "#4183C4"
+myDarkerBlue:    &myDarkerBlue    "#156073"
+myGreenBlue:     &myGreenBlue     "#19a9a9"
+
+myOrange:        &myOrange    	  "#fe7002"
+myGrayOrange:    &myGrayOrange    "#e87352"
+
+myPomegranate:   &myPomegranate   "#c0392b"
+myAlizarin:      &myAlizarin      "#e74c3c"
 
 brickrows:
   - 
-    - {target: "./", icon: icon-home, text: Home, color: *myalizarin}
+    - {target: "./", icon: icon-home, text: Home, color: *myDarkerBlue}
     - {}
     - {}
     - {}
     - {}
     - {}
-    - {target: "#", icon: icon-blog, text: About me, color: *mypomegranate}
+    - {target: "#incubator", icon: icon-blog, text: About me, color: *myDarkerBlue}
     - {image: /images/avatar.jpg}
   - 
     - {}
-    - {active: true, target: services.html, icon: icon-services, text: Incubator, color: *myturquoise}
+    - {active: true, target: "#incubator", icon: icon-services, text: Incubator, color: *myTurquoise}
     - {image: /images/incubator/incubatorProxy.png}
     - {image: /images/incubator/fanProxy.png}
     - {}
-    - {active: true, target: services.html, icon: icon-services, text: DNA Staining, color: *myobservatory}
+    - {active: true, target: "#incubator", icon: icon-services, text: DNA Staining, color: *myGreenBlue}
     - {image: /images/incubator/dnaStainingProxy.png}
     - {}
   -
     - {image: /images/centrifuge/centrifugeProxy.png}
     - {image: /images/centrifuge/rotorPrintedProxy.jpg}
-    - {active: true, target: services.html, icon: icon-services, text: Centrifuge, color: *myobservatory}
+    - {active: true, target: "#incubator", icon: icon-services, text: Centrifuge, color: *myGreenBlue}
     - {image: /images/centrifuge/lcdProxy.jpg}
     - {}
     - {}
     - {image: /images/magneticStirrer/magneticStirrerProxy.jpg}	
-    - {active: true, target: services.html, icon: icon-services, text: Magnetic Stirrer, color: *mydarkGreen}
+    - {active: true, target: "#incubator", icon: icon-services, text: Magnetic Stirrer, color: *myTurquoise}
   - 
     - {}
-    - {active: true, target: services.html, icon: icon-services, text: Spectrometer, color: *myturquoise}
+    - {active: true, target: "#incubator", icon: icon-services, text: Spectrometer, color: *myTurquoise}
     - {image: /images/spectrometer/spectrometerProxy.jpg}
     - {}
-    - {active: true, target: services.html, icon: icon-services, text: Peristaltic Pump, color: *myobservatory}
+    - {active: true, target: "#incubator", icon: icon-services, text: Peristaltic Pump, color: *myGreenBlue}
     - {image: /images/peristalticPump/laserCutterProxy.jpg}	
     - {image: /images/peristalticPump/peristalticPumpProxy.jpg}
     - {}	

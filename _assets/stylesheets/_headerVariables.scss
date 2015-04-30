@@ -5,20 +5,10 @@
 
 $bannerBackground: url(/images/bgimage.jpg) center center;
 
-// Colors
-
-$backgroundColor: #fff;
-
-$greenSea:  #55c392;
-$darkGreen: #16a085;
-$emerald:   #2ecc71;
-$nephritis: #27ae60;
-$turquoise: #1abc9c;
-
-$babyBlue:  #18c3cf;
-$blue:      #4183C4;
-
-$orange:    #fe7002;
+// Brick link
+$brickLinkHoverColor: rgba(168, 234, 8, 1);
+//$brickLinkHoverColor: rgba(236, 255, 0, 1);
+$brickLinkColor:      rgba(249, 249, 249, 1);
 
 // Brick dimensions
 $brickWidth:       7em;

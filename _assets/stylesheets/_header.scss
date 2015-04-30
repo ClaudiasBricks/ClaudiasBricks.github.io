@@ -18,7 +18,7 @@
 }
 
 .image {
-	min-height: 680px;
+	min-height: 640px;
 	background: $bannerBackground;
 	background-color: $backgroundColor;
 	background-size: cover;
@@ -70,7 +70,7 @@ a, li {
 /* Global CSS that are applied for all screen sizes */
 .nav a {
 	display: block;
-	color: rgba(249, 249, 249, .9);
+	color: $brickLinkColor;
 	text-decoration: none;
 	-webkit-transition: color .5s, background .5s, height .5s;
 	-moz-transition: color .5s, background .5s, height .5s;
@@ -98,11 +98,11 @@ a, button {
 
 
 .no-touch  ul:hover ul:hover a  {
-	color: rgba(249, 249, 249, .4);
+	color: $brickLinkColor;
 }
 
 .no-touch  ul:hover ul:hover a:hover  {
-	color: rgba(249, 249, 249, 1);
+	color: $brickLinkHoverColor;
 }
 
 
@@ -229,13 +229,16 @@ a, button {
 	transition: box-shadow .4s ease-in-out;
 }
 
-@media (min-height: 680px) {
+@media (min-height: 5 * $brickHeight) {
 	.image {
-		min-height: 800px;
+		min-height: 5 * $brickHeight;
 	}
 }
 
 @media (min-width: 8 * $brickWidthMedium) and (max-width: 8 * $brickWidth + 10) {
+	.image {
+		min-height: 5 * $brickHeightMedium;
+	}
 	.nav {
 		li:first-child  {
 			margin-bottom: $bottomFirstBricksMedium;
@@ -271,6 +274,10 @@ a, button {
 }
 
 @media (min-width: 8 * $brickWidthSmall) and (max-width: 8 * $brickWidthMedium + 10) {
+	.image {
+		min-height: 5 * $brickHeightSmall;
+	}
+	
 	.nav {
 		li:first-child  {
 			margin-bottom: $bottomFirstBricksSmall;
@@ -300,14 +307,16 @@ a, button {
 		font-size: 0.7em;
 	}
 	
-
-		
 	.nav i {
 		padding: 0;
 	}
 }
 
-@media (max-width: 8 * $brickHeightSmall + 5) {
+@media (max-width: 8 * $brickWidthSmall + 5) {
+	.image {
+		min-height: 2 * $brickHeightMedium + $bottomFirstBricksSmall;
+	}
+	
 	.nav {
 		li:first-child  {
 			margin-bottom: 0;
@@ -348,8 +357,14 @@ a, button {
 	}
 }
 
-// Styling the toggle menu link and hiding it
+@media (max-width: 4 * $brickWidthSmall + 6) {
+	.image {
+		min-height: 5 * $brickHeightMedium;
+	}
+}
 
+// Styling the toggle menu link and hiding it
+/*
 .nav .navtoogle{
 	display: none;	
 	width: 100%;
@@ -375,3 +390,4 @@ a, button {
 	line-height: 0;
 	font-size: 1.6em;
 }
+*/
