@@ -37,24 +37,24 @@ brickrows:
     - {image: /images/incubator/incubatorProxy.png}
     - {image: /images/incubator/fanProxy.png}
     - {}
-    - {active: true, target: "#incubator", icon: icon-services, text: DNA Staining, color: *myDarkGreen}
     - {image: /images/incubator/dnaStainingProxy.png}
+    - {active: true, target: "#incubator", icon: icon-services, text: DNA Staining, color: *myDarkGreen}
     - {}
   -
     - {image: /images/centrifuge/centrifugeProxy.png}
     - {image: /images/centrifuge/rotorPrintedProxy.jpg}
     - {active: true, target: "#incubator", icon: icon-services, text: Centrifuge, color: *myDarkGreen}
-    - {image: /images/centrifuge/lcdProxy.jpg}
     - {}
-    - {}
-    - {image: /images/magneticStirrer/magneticStirrerProxy.jpg}	
-    - {active: true, target: "#incubator", icon: icon-services, text: Magnetic Stirrer, color: *myGreen}
+    - {active: true, target: "#incubator", icon: icon-services, text: Peristaltic Pump, color: *myDarkGreen}
+    - {image: /images/peristalticPump/laserCutterProxy.jpg}
+    - {image: /images/peristalticPump/lcdProxy.jpg}
+    - {image: /images/peristalticPump/peristalticPumpProxy.jpg}
   - 
     - {}
     - {active: true, target: "#incubator", icon: icon-services, text: Spectrometer, color: *myGreen}
     - {image: /images/spectrometer/spectrometerProxy.jpg}
     - {}
-    - {active: true, target: "#incubator", icon: icon-services, text: Peristaltic Pump, color: *myDarkGreen}
-    - {image: /images/peristalticPump/laserCutterProxy.jpg}	
-    - {image: /images/peristalticPump/peristalticPumpProxy.jpg}
+    - {}
+    - {active: true, target: "#incubator", icon: icon-services, text: Magnetic Stirrer, color: *myGreen}
+    - {image: /images/magneticStirrer/magneticStirrerProxy.jpg}
     - {}	
