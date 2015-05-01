@@ -97,14 +97,17 @@ a, button {
 /* Hover effect for the whole navigation to make the hovered item stand out */
 
 
-.no-touch  ul:hover ul:hover a  {
+ul:hover ul:hover a  { // double ul:hover is necessary
 	color: $brickLinkColor;
 }
 
-.no-touch  ul:hover ul:hover a:hover  {
+ul:hover ul:hover a:hover  {
 	color: $brickLinkHoverColor;
 }
 
+ul:hover li:first-child:hover ul:hover a:hover  {
+	color: $brickLinkColor;
+}
 
 // For all screen sizes
 .nav {
