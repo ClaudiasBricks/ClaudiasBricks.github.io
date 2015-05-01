@@ -105,7 +105,7 @@ ul:hover ul:hover a:hover  {
 	color: $brickLinkHoverColor;
 }
 
-ul:hover li:first-child:hover ul:hover a:hover  {
+.no-touch ul:hover li:first-child:hover ul:hover a:hover  {
 	color: $brickLinkColor;
 }
 
