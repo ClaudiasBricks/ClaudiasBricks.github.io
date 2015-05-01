@@ -53,3 +53,13 @@
 		}
 	}
 }
+
+@media (max-width: 600px) {
+	.courses-container {
+		height: auto;
+	}
+	
+	.course {
+		width: 100%;
+	}
+}

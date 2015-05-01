@@ -357,7 +357,7 @@ a, button {
 	}
 }
 
-@media (max-width: 4 * $brickWidthSmall) {
+@media (max-width: 4 * $brickWidthSmall + 6) {
 	.image {
 		min-height: 5 * $brickHeightMedium;
 	}

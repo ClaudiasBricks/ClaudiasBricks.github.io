@@ -1,11 +1,13 @@
 .incubator-container {
 	//height: 600px;
 	display: flex;
-	justify-content: space-around;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
 	margin: 0 0;
-	background-color: $babyBlue;
+	background-color: $myGreen;
 	
 	img {
-		//max-height: 600px;
+		max-height: 600px;
 	}
 }
