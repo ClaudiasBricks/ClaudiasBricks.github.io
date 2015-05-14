@@ -6,7 +6,7 @@
 }
 
 .courses-section {
-    width: 1200px;
+    width: $section-maxwidth;
     display: flex;
     justify-content: flex-start;
     flex-flow: column wrap;

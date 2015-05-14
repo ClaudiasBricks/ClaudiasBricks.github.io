@@ -5,15 +5,17 @@
 // IMPORTS
 //
 
+@import "mixins";
 @import "reset";
 @import "variables";
 @import "headerVariables";
 @import "header";
 @import "courses";
 @import "incubator";
+@import "pump";
 @import "post";
 @import "post-header";
-//@import "about-me";
+@import "about-me";
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -251,6 +253,12 @@ nav {
       color: $blue;
     }
   }
+}
+
+.section-end {
+	border-top: 1px solid $myGreen2;
+	margin-right: 100px;
+    margin-left: 100px;
 }
 
 //

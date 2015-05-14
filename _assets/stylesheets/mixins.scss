@@ -1,0 +1,113 @@
+@mixin transition {
+	-webkit-transition: color .5s, background .5s, height .5s, outline .5s;
+	-moz-transition: color .5s, background .5s, height .5s, outline .5s;
+	-o-transition: color .5s, background .5s, height .5s, outline .5s;
+	-ms-transition: color .5s, background .5s, height .5s, outline .5s;
+	transition: color .5s, background .5s, height .5s, outline .5s;
+}
+
+@mixin headermediascale($brickWidth, $brickHeight, $titleFont, $brickFontText, $brickFont, $brickFontIcon) {
+	.header-container .nav .bricklists {
+		max-width: 8 * $brickWidth;
+		
+		.title {
+			font-size: $titleFont;
+		}
+		
+		.bricklist {
+			.brick {
+				width: $brickWidth;
+				height: $brickHeight;
+				
+				a .text {
+					font-size: $brickFontText;
+				}
+				
+				a .icon {
+					display: flex;
+					flex-direction: row;
+					justify-content: center;
+					font-size: $brickFont;
+					
+					i {
+						font-size: $brickFontIcon;
+					}
+				} // icon
+			} // brick
+		} // bricklist
+	} // bricklists
+} // mixin
+
+@mixin academypostslargescreens {
+	.container {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	
+		.image {
+			max-width: $section-maxwidth / 3;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			margin: 20px;
+			
+			img {
+				box-shadow: 10px 10px 20px $gray;
+			}
+		}
+		
+		.articles {
+			padding: 20px;
+			margin: 20px;
+			font-size: 0.8em;
+			
+			.post {
+				color: $gray;
+			}
+			
+			a {
+				padding: 0;
+				margin: 0;
+				color: $myGreen2;
+			}
+			
+			a:hover {
+				color: $myGreen1;
+			}
+			
+		}
+	}
+}
+
+@mixin academypostsmediumscreens {
+	@media (min-width: 530px) and (max-width: 820px) {
+		.container {
+			.entry {
+				visibility: hidden;
+				height: 0;
+			}
+		}
+	}
+}
+
+@mixin academypostssmallscreens {
+	@media (max-width: 530px + 10) {
+		.container {
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		
+			.image {
+				width: 90%;
+			}
+			
+			.articles {
+				width: 95%;
+				margin: 10px 10px 10px 10px;
+			}
+		}
+	}
+}

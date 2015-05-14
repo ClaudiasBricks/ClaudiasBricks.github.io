@@ -1,49 +1,35 @@
 <script src="../js/modernizr.custom.js"></script>
 
 <div class="header-container">
-	<nav class="nav">
-
-		<div class="bricklists">
-			{% for bricklist in site.data.bricks.bricklists %}
-				{% if bricklist.title %}
-				
-					<div class="title">{{ bricklist.title }}</div>
-			
-				{% else %}
-
-					<div class="bricklist">
-				
-						{% for brick in bricklist %}
-							<div class="brick" style="background: {{ brick.color }}">
+	<div class="containerlist">
+		<nav id="menu1" class="nav">
+			<ul>
+				{% for bricks in site.data.bricks.brickrows %}
+					<li>
+						<ul>
+							{% for brick in bricks %}
 								{% if brick.image %}
-								
-									<img class="visible" src= "{{ brick.image }}">
-									
+									<li> 
+										<img class="visible" src= "{{ brick.image }}" %\>
+									</li>
 								{% elsif brick.target %}
-
-									<a href={{ brick.target }} class="brickicon" > 
-										<span class="icon"> <i class={{ brick.icon }}></i> </span>
-										<span class="text">{{ brick.text }}</span> 
-									</a>
+									<li style="background: {{ brick.color }}">
 									
-								{% elsif brick.notarget %}
-
-									<a href="." class="nobrickicon" > 
-										<span class="icon"> <i class={{ brick.icon }}></i> </span>
-										<span class="text">{{ brick.text }}</span> 
-									</a>
-									
+										<a href={{ brick.target }} class={% if brick.active  %} "active" {% else %} "visible" {% endif %} > 
+											<span class="icon"> <i class={{ brick.icon }}></i> </span>
+											<span class="text">{{ brick.text }}</span> 
+										</a>
+									</li>
+								{% else %}
+									<li/>
 								{% endif %}
-							</div>
-						{% endfor %}
-					</div>
-						
-				{% endif %}
-				
-			{% endfor %}
-		</div>
-
-	</nav>
+							{% endfor %}
+						</ul>
+					</li>
+				{% endfor %}
+			</ul>
+		</nav>
+	</div>
 </div>
 
 <!--<li>

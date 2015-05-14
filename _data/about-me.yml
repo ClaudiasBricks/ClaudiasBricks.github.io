@@ -1,0 +1,24 @@
+name: Claudia Marginean
+description: Software Engineer by profession, Biohacker in my free time.
+
+technical-skills:
+  name: Technical Skills
+  elements:
+    - {category: Programming, value: "Java (J2SE), C++, Html & Css (beginner)"}
+    - {category: Operating Systems, value: "Windows, Linux"}
+    - {category: IDEs used, value: "Eclipse, Microsoft Visual Studio"}
+    - {category: Versioning tools, value: "Perforce, GIT (beginner)"}
+
+biohacking:
+  name: Biohacking
+  elements:
+    - {category: PCR, value: "Meat PCR Barcoding (Wetlab at Waag Society)"}
+    - {category: Miscellaneous, value: BioHacking Academy}  
+
+career:
+  name: Education & Work Experience
+  elements:
+    - {category: Msc Computer Science, value: "Politechnica University of Bucharest (2003-2008)"}
+    - {category: Junior Programmer, value: "Freescale Semiconductor, Bucharest (2007-2008)"}  
+    - {category: Software Engineer, value: "Quintiq Inc, Den Bosch (2008-present)"}
+  

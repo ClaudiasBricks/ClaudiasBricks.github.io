@@ -21,33 +21,40 @@ myGrayOrange:    &myGrayOrange    "#e87352"
 myPomegranate:   &myPomegranate   "#c0392b"
 myAlizarin:      &myAlizarin      "#e74c3c"
 
-myGreen1:        &myGreen1        "#33cc66"
-myGreen2:        &myGreen2        "#339a66"
-myRed1:          &myRed1          "#f84e42"
-
-bricklists:
+brickrows:
   - 
-    - {target: "./", icon: icon-home, text: Home, color: *myPomegranate}
-  -
-    - {target: "#about-me", icon: icon-blog, text: About me, color: *myPomegranate}
+    - {target: "./", icon: icon-home, text: Home, color: *myGrayOrange}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {target: "#incubator", icon: icon-blog, text: About me, color: *myGrayOrange}
     - {image: /images/avatar.jpg}
-  - {title: BioHack Academy}
-  -
-    - {active: true, target: "#incubator", icon: icon-services, text: Incubator, color: *myGreen1}
+  - 
+    - {}
+    - {active: true, target: "#incubator", icon: icon-services, text: Incubator, color: *myGreen}
     - {image: /images/incubator/incubatorProxy.png}
     - {image: /images/incubator/fanProxy.png}
+    - {}
+    - {image: /images/incubator/dnaStainingProxy.png}
+    - {active: true, target: "#incubator", icon: icon-services, text: DNA Staining, color: *myDarkGreen}
+    - {}
   -
     - {image: /images/centrifuge/centrifugeProxy.png}
-    - {active: true, notarget: "#incubator", icon: icon-services, text: Centrifuge, color: *myGreen1}
     - {image: /images/centrifuge/rotorPrintedProxy.jpg}
+    - {active: true, target: "#incubator", icon: icon-services, text: Centrifuge, color: *myDarkGreen}
+    - {}
+    - {active: true, target: "#incubator", icon: icon-services, text: Peristaltic Pump, color: *myDarkGreen}
     - {image: /images/peristalticPump/laserCutterProxy.jpg}
     - {image: /images/peristalticPump/lcdProxy.jpg}
-    - {active: true, target: "#pump", icon: icon-services, text: Peristaltic Pump, color: *myGreen2}
     - {image: /images/peristalticPump/peristalticPumpProxy.jpg}
   - 
+    - {}
+    - {active: true, target: "#incubator", icon: icon-services, text: Spectrometer, color: *myGreen}
     - {image: /images/spectrometer/spectrometerProxy.jpg}
-    - {active: true, notarget: "#incubator", icon: icon-services, text: Spectrometer, color: *myGreen2}
+    - {}
+    - {}
+    - {active: true, target: "#incubator", icon: icon-services, text: Magnetic Stirrer, color: *myGreen}
     - {image: /images/magneticStirrer/magneticStirrerProxy.jpg}
-    - {active: true, notarget: "#incubator", icon: icon-services, text: Magnetic Stirrer, color: *myGreen1}
-    -
- 
+    - {}	

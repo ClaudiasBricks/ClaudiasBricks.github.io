@@ -1,13 +1,9 @@
-<div class="incubator-container" id="incubator">
+<div class="pump-container" id="pump">
 	<div class="container">
 	
-		<div class="image">
-			<img src="{{ site.baseurl }}/images/incubator/incubator.jpg"/>
-		</div>
-		
 		<div class="articles">
 			{% for post in site.posts %}
-				{% if post.categories contains 'incubator' %}
+				{% if post.categories contains 'peristaltic-pump' %}
 					<article class="post">
 				
 						<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
@@ -23,5 +19,9 @@
 			{% endfor %}
 		</div>
 		
-	</div>
+		<div class="image">
+			<img src="{{ site.baseurl }}/images/peristalticPump/peristalticPump.jpg"/>
+		</div>
+
+	</div>	
 </div>

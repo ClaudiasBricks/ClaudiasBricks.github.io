@@ -9,7 +9,7 @@
 	font-style: normal;
 }
 
-/* Windows Chrome ugly fix http://stackoverflow.com/questions/13674808/chrome-svg-font-rendering-breaks-layout/14345363#14345363 */
+// Windows Chrome ugly fix http://stackoverflow.com/questions/13674808/chrome-svg-font-rendering-breaks-layout/14345363#14345363
 @media screen and (-webkit-min-device-pixel-ratio:0) {
 	@font-face {
 		font-family: 'icomoon';
@@ -17,11 +17,17 @@
 	};
 }
 
+
 .header-container {
-	height: 5 * $brickHeight - 2em;
+	//height: 5 * $brickHeight - 2em;
+	height: 100vh;
 	background-image: url(/images/bgimage.jpg);
 	background-size: cover;
-	
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+		
 	.icon-team, .icon-blog, .icon-home, .icon-portfolio, .icon-services, .icon-contact, .icon-menu {
 		font-family: 'icomoon';
 		speak: none;
@@ -61,325 +67,166 @@
 		content: "\f0c9";
 	}
 	
-	a, li {
-		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-	}
-	
-	/* Global CSS that are applied for all screen sizes */
-	.nav a {
-		display: block;
-		color: $brickLinkColor;
-		text-decoration: none;
-		-webkit-transition: color .5s, background .5s, height .5s;
-		-moz-transition: color .5s, background .5s, height .5s;
-		-o-transition: color .5s, background .5s, height .5s;
-		-ms-transition: color .5s, background .5s, height .5s;
-		transition: color .5s, background .5s, height .5s;
-	}
-	
-	.nav i {
-		/* Make the font smoother for Chrome */
-		-webkit-transform: translate3d(0, 0, 0);
-		-moz-transform: translate3d(0, 0, 0);
-		-o-transform: translate3d(0, 0, 0);
-		-ms-transform: translate3d(0, 0, 0);
-		transform: translate3d(0, 0, 0);
-	}
-	
-	/* Remove the blue Webkit background when element is tapped */
-	
-	a, button {
-		-webkit-tap-highlight-color: rgba(0,0,0,0);
-	}
-	
-	/* Hover effect for the whole navigation to make the hovered item stand out */
-	
-	
-	ul:hover ul:hover a  { // double ul:hover is necessary
-		color: $brickLinkColor;
-	}
-	
-	ul:hover ul:hover a:hover  {
-		color: $brickLinkHoverColor;
-	}
-	
-	.no-touch ul:hover li:first-child:hover ul:hover a:hover  {
-		color: $brickLinkColor;
-	}
-	
 	// For all screen sizes
 	.nav {
-		margin: 0;
-		padding: 0;
-		position: absolute;
-		width: 100%;
+		margin: 0 0;
+		max-width: 100%;
+		height: 100%;
 		display: flex;
+		flex-direction: row;
 		justify-content: center;
 		align-items: center;
-			
-		ul {
-			margin: 0;
-			padding: 0;
-		}
+		margin: 1px 0px 0px 15px;
 		
-		li:first-child  {
-			margin-bottom: $bottomFirstBricks;
-		}
-	
-		li {
-			float: center;
-			height: $brickHeight;
-			display: block;
+		.bricklists {
+			max-width: 8 * $brickWidth;
+			height: 100%;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			align-content: center;
+			align-items: center;
 			
-			/* This centers the horizontal list */
-			
-			ul {
-				display: table;
-				margin: 0 auto;
+			.title {
+				color: white;
+				font-size: $titleFont;
+				font-weight: bold;
+				width: 50%;
+				display: flex;
+				flex-direction: row;
+				justify-content: flex-end;
 			}
-	
-			/* Transforms 2nd the list into a horizontal navigation */
-	
-			li {
-				float: left;
-				display:inline-block;
-				width: $brickWidth;
-				height: $brickHeight;
-				text-align: center;
-				-webkit-transition: border .5s;
-				-moz-transition: border .5s;
-				-o-transition: border .5s;
-				-ms-transition: border .5s;
-				transition: border .5s;
 				
-				.visible {
+			.bricklist {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				flex-wrap: wrap;
+				width: 50%;
+		
+				.brick {
 					width: $brickWidth;
 					height: $brickHeight;
-				}
-				
-				.active {
-					width: $brickWidth;
-					height: $brickHeight;
-				}
-			}
-		}
-	}
-	
-	.nav a {
-		display: block;
-		margin: 0 0;
-		text-align: center;
-	}
-	
-	.nav li li span, 
-	.nav li li span .icon {
-		display: inline-block;
-		margin: 0 0;
-	}
-	
-	/* Placing the icon */
-	
-	.icon {
-		padding-top: 1.4em;
-		padding-left: 1.4em;
-		padding-right: 1.4em;
-	}
-	
-	.icon + span {
-		margin-top: 2.1em;
-		-webkit-transition: margin .5s;
-		-moz-transition: margin .5s;
-		-o-transition: margin .5s;
-		-ms-transition: margin .5s;
-		transition: margin .5s;
-	}
-	
-	/* Positioning the icons and preparing for the animation */
-	
-	.nav i {
-		position: relative;
-		display: inline-block;
-		margin: 0 auto;
-		padding: 0.4em;
-		border-radius: 50%;
-		font-size: $brickFont;
-		box-shadow: 0 0 0 30px transparent;
-		background: rgba(255,255,255,0.1);
-		-webkit-transform: translate3d(0, 0, 0);
-		-moz-transform: translate3d(0, 0, 0);
-		-o-transform: translate3d(0, 0, 0);
-		-ms-transform: translate3d(0, 0, 0);
-		transform: translate3d(0, 0, 0);
-		-webkit-transition: box-shadow .6s ease-in-out;
-		-moz-transition: box-shadow .6s ease-in-out;
-		-o-transition: box-shadow .6s ease-in-out;
-		-ms-transition: box-shadow .6s ease-in-out;
-		transition: box-shadow .6s ease-in-out;
-	}
-	
-	/* Animate the box-shadow to create the effect */
-	
-	.no-touch .nav a:hover i,
-	.no-touch .nav a:active i,
-	.no-touch .nav a:focus i {		
-		box-shadow: 0 0 0 0 rgba(255,255,255,0.1);
-		-webkit-transition: box-shadow .4s ease-in-out;
-		-moz-transition: box-shadow .4s ease-in-out;
-		-o-transition: box-shadow .4s ease-in-out;
-		-ms-transition: box-shadow .4s ease-in-out;
-		transition: box-shadow .4s ease-in-out;
-	}
-	
-	@media (min-width: 8 * $brickWidthMedium) and (max-width: 8 * $brickWidth + 10) {
-		height: 5 * $brickHeightMedium;
-
-		.nav {
-			li:first-child  {
-				margin-bottom: $bottomFirstBricksMedium;
-			}
-			
-			li {
-				height: $brickHeightMedium;
-				
-				li {
-					width: $brickWidthMedium;
-					height: $brickHeightMedium;
-				
-					.visible {
-						width: $brickWidthMedium;
-						height: $brickHeightMedium;
-					}
-						
-					.active {
-						width: $brickWidthMedium;
-						height: $brickHeightMedium;
-					}
-				}
-			}
-		}
-		
-		.nav li .icon + span {
-			font-size: 0.7em;
-		}
-		
-		.nav i {
-			padding: 0.2em;
-		}
-	}
-	
-	@media (min-width: 8 * $brickWidthSmall) and (max-width: 8 * $brickWidthMedium + 10) {
-		height: 5 * $brickHeightSmall;
-		
-		.nav {
-			li:first-child  {
-				margin-bottom: $bottomFirstBricksSmall;
-			}
-			
-			li {
-				height: $brickHeightSmall;
-				
-				li {
-					width: $brickWidthSmall;
-					height: $brickHeightSmall;
-				
-					.visible {
-						width: $brickWidthSmall;
-						height: $brickHeightSmall;
-					}
-						
-					.active {
-						width: $brickWidthSmall;
-						height: $brickHeightSmall;
-					}
-				}
-			}
-		}
-		
-		.nav li  span  {
-			font-size: 0.7em;
-		}
-		
-		.nav i {
-			padding: 0;
-		}
-	}
-	
-	@media (min-width: 4 * $brickWidthSmall) and (max-width: 8 * $brickWidthSmall + 5) {
-		height: 2 * $brickHeightMedium + $bottomFirstBricksSmall;
-	}
-		
-	@media (max-width: 4 * $brickWidthSmall + 5) {
-		height: 5 * $brickHeightMedium;
-	}
-	
-	@media (max-width: 8 * $brickWidthSmall + 5) {
-		.nav {
-			li:first-child  {
-				margin-bottom: 0;
-				float: left;
-			}
-			
-			li {
-				float: left;
-				min-height: $brickHeightMedium;
-				display: inline;
-				
-				li {
-					height: $brickHeightMedium;
-					width: auto;
-					display: inline-block;
 					
-					.active,
-					.visible {
-						display: none;
+					img {
+						width: 100%;
+						height: 100%;
 					}
-				
-					a.active,
-					a.visible {
-						width: $brickWidthMedium;
-						height: $brickHeightMedium;
-						display: block;
+					
+					// Remove the blue Webkit background when element is tapped
+					a, button {
+						-webkit-tap-highlight-color: rgba(0,0,0,0);
+					}
+					
+					a,
+					a:hover {
+						color: $brickLinkColor;
+					}
+
+					a {
+						margin: 0;
+						padding: 0;
+						width: 100%;
+						height: 100%;
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+						flex-wrap: wrap;
+						
+						-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+						
+						.text {
+							font-size: $brickFontText;
+							font-family:Verdana;
+						    font-weight:100;
+							text-align: center;
+						}
+						
+						.icon {
+							display: flex;
+							flex-direction: row;
+							justify-content: center;
+							font-size: $brickFont;
+							
+							i {
+								font-size: $brickFontIcon;
+							}
+						}
 					}
 				}
 			}
+
+			.bricklist:nth-child(1) {
+				height: 26%;
+				justify-content: flex-start;
+				padding-left: $brickWidth / 2;
+			}
+			.bricklist:nth-child(2) {
+				height: 26%;
+				justify-content: flex-end;
+				padding-right: $brickWidth / 2;
+			}
+
+			.bricklist:nth-child(5),
+			.bricklist:nth-child(6) {
+				width: 100%;
+			}
+
+			.brickicon,
+			.nobrickicon {
+				position: relative;
+				@include transition;
+			}
+			.brickicon:hover {
+				outline: rgba(255, 255, 255, 0.5) 10px solid;
+				z-index: 100;
+			}
+			.nobrickicon:hover {
+				background: $gray;
+			}
+
+		} // bricklists
+		
+	} // nav
+} //header-container	
+	
+	
+@media (min-width: 8 * $brickWidthMedium) and (max-width: 8 * $brickWidth + 10) {
+	@include headermediascale($brickWidthMedium, $brickHeightMedium, $titleFontMedium, $brickFontTextMedium, $brickFontMedium, $brickFontIconMedium);
+}
+
+@media (min-width: 8 * $brickWidthSmall) and (max-width: 8 * $brickWidthMedium + 10) {
+	@include headermediascale($brickWidthSmall, $brickHeightSmall, $titleFontSmall, $brickFontTextSmall, $brickFontSmall, $brickFontIconSmall);
+}
+
+@media (max-width: 8 * $brickWidthSmall + 10) {
+	@include headermediascale($brickWidthSmall, $brickHeightSmall, $titleFontSmall, $brickFontTextSmall, $brickFontSmall, $brickFontIconSmall);
+	
+	.header-container .nav { 
+		.bricklists,
+		.bricklists .bricklist {
+			flex-direction: row;
+			flex-wrap: wrap;
+			width: auto;
 		}
 		
-		.nav li .icon + span {
-			font-size: 0.7em;
+		.bricklists .bricklist:nth-child(1),
+		.bricklists .bricklist:nth-child(2),
+		.bricklists .bricklist:nth-child(5),
+		.bricklists .bricklist:nth-child(6) {
+			height: auto;
+			width: auto;
+			padding-left: 10px;
+			padding-right: 10px;
+			justify-content: center;
 		}
 		
-		.nav i {
-			padding: 0.2em;
+		.bricklists .title { 
+			width: auto;
+			font-weight: normal;
 		}
 	}
-
-
-	// Styling the toggle menu link and hiding it
-	/*
-	.nav .navtoogle{
-		display: none;	
-		width: 100%;
-		padding: 0.5em 0.5em 0.8em;
-		font-family: 'Lato',Calibri,Arial,sans-serif;
-		font-weight: normal;
-		text-align: left;
-		color: rgb(7, 16, 15);
-		font-size: 1.2em;
-		background: none;	
-		border: none;
-		border-bottom: 4px solid rgb(221, 221, 221);
-		cursor: pointer;
-	}
 	
-	.navtoogle i {
-		z-index:-1;
-	}
-	
-	.icon-menu {
-		position: relative;
-		top: 3px;
-		line-height: 0;
-		font-size: 1.6em;
-	}
-	*/
 }

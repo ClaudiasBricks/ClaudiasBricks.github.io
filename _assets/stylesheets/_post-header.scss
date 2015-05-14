@@ -17,7 +17,7 @@
 			justify-content: space-around;
 						
 			li {
-				background-color: $myGrayOrange;
+				background-color: $myRed1;
 			}
 			
 			a {
@@ -34,7 +34,7 @@
 				flex-direction: row;
 			
 				li {
-					background-color: $myDarkGreen;
+					background-color: $myGreen1;
 					padding: 0 15px;
 				}
 			}
@@ -47,7 +47,7 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;		
-		background-color: $myGreen;
+		background-color: $myGreen2;
 				
 		.banner-text {
 			border: 5px solid white;
