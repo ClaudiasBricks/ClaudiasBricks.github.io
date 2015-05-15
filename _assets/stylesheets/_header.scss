@@ -210,6 +210,7 @@
 			flex-direction: row;
 			flex-wrap: wrap;
 			width: auto;
+			justify-content: center;
 		}
 		
 		.bricklists .bricklist:nth-child(1),
@@ -220,12 +221,12 @@
 			width: auto;
 			padding-left: 10px;
 			padding-right: 10px;
-			justify-content: center;
 		}
 		
 		.bricklists .title { 
-			width: auto;
+			width: 100%;
 			font-weight: normal;
+			justify-content: center;
 		}
 	}
 	
