@@ -9,9 +9,9 @@
 		min-height: 300px;
 		width: 100%;
 		background-image: url(/images/gelElectrophoresis.jpg);
-		background-size: contain;
+		background-size: auto 300px;
 		background-repeat: no-repeat;
-		background-color: #28182e;
+		background-color: #271836;
 	}
 	
 	.name {
@@ -31,7 +31,7 @@
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			
+					
 			h5 {
 				width: 100%;
 				color: $myRed1;
@@ -74,6 +74,11 @@
 
 @media (max-width: 880px + 10) {
 	.about-me {
+		.gel-image {
+			min-height: 200px;
+			background-size: auto 200px;
+		}
+
 		.description h4 {
 			font-size: 0.8em;
 		}
