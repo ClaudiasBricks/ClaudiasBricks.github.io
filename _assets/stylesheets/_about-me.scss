@@ -5,6 +5,15 @@
 	align-items: center;
 	margin-bottom: 40px;
 	
+	.gel-image {
+		min-height: 300px;
+		width: 100%;
+		background-image: url(/images/gelElectrophoresis.jpg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-color: #28182e;
+	}
+	
 	.name {
 		text-transform: uppercase;
 	}
@@ -77,6 +86,14 @@
 
 			.skill-set {	
 				width: 100%;
+				
+				.skill {
+					flex-direction: column;
+					
+					.skill-value {
+						padding-left: 30px; 
+					}
+				}
 			}
 		}
 	}

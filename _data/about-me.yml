@@ -4,7 +4,7 @@ description: Software Engineer by profession, Biohacker in my free time.
 technical-skills:
   name: Technical Skills
   elements:
-    - {category: Programming, value: "Java (J2SE), C++, Html & Css (beginner)"}
+    - {category: Programming, value: "Java (J2SE), C++, Design Patterns, Html & Css"}
     - {category: Operating Systems, value: "Windows, Linux"}
     - {category: IDEs used, value: "Eclipse, Microsoft Visual Studio"}
     - {category: Versioning tools, value: "Perforce, GIT (beginner)"}
@@ -12,7 +12,7 @@ technical-skills:
 biohacking:
   name: Biohacking
   elements:
-    - {category: PCR, value: "Meat PCR Barcoding (Wetlab at Waag Society)"}
+    - {category: PCR, value: "Meat PCR Experiment (Wetlab at Waag Society)"}
     - {category: Miscellaneous, value: BioHacking Academy}  
 
 career:

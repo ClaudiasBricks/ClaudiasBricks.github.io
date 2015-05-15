@@ -28,6 +28,13 @@ courses:
   		category: "Epigenetics"
   	}
   - {
+  		img: /images/documentation/ending-aging.jpg, 
+  		href: "http://www.amazon.com/Ending-Aging-Rejuvenation-Breakthroughs-Lifetime/dp/0312367074", 
+  		university: Aubrey de Grey, 
+  		title: "Ending Aging", 
+  		category: "Rejuvenation"
+  	}
+  - {
   		img: /images/documentation/edx-logo-header.png, 
   		href: "https://www.edx.org/course/chemistry-life-kyotoux-001x-0", 
   		university: KyotoUx, 

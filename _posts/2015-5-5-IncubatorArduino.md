@@ -5,7 +5,7 @@ title: "Incubator: Arduino"
 categories: incubator
 ---
 
-The biggest challenge was by far putting together the electronic circuits.
+The biggest challenge by far was putting together the electronic circuits.
 
 ###Arduino
 Before the academy started, I had bought some Arduino kits on e-bay and tried a couple of easy experiments. My plan next was to build an automated plant watering system for my indoor plants, but by the time I received all the components (I tried to go as cheap as possible, so I ordered them from China) the academy had started. So my plant watering system is on hold for now until I graduate from the academy. But I digress... In my opinion there are 3 main circuits needed, so in the beginning I've build each separate.
