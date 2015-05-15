@@ -21,6 +21,7 @@
 .header-container {
 	//height: 5 * $brickHeight - 2em;
 	height: 100vh;
+	min-height: 7 * $brickHeightSmall;
 	background-image: url(/images/bgimage.jpg);
 	background-size: cover;
 	display: flex;
@@ -229,5 +230,4 @@
 			justify-content: center;
 		}
 	}
-	
 }
