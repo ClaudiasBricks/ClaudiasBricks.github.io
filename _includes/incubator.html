@@ -6,7 +6,7 @@
 		</div>
 		
 		<div class="articles">
-			{% for post in site.posts %}
+			{% for post in site.posts reversed %}
 				{% if post.categories contains 'incubator' %}
 					<article class="post">
 				

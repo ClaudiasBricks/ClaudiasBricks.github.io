@@ -8,7 +8,7 @@ courses:
   	}
   - {
   		img: /images/documentation/edx-logo-header.png, 
-  		href: "./", 
+  		href: "https://www.edx.org/course/introduction-biology-secret-life-mitx-7-00x-2", 
   		university: MITx, 
   		title: "7.00x Introduction to Biology - The Secret of Life", 
   		category: "Molecular Biology"
@@ -26,6 +26,13 @@ courses:
   		university: University of Merlbourne, 
   		title: "Epigenetic Control of Gene Expression", 
   		category: "Epigenetics"
+  	}
+  - {
+  		img: /images/documentation/edx-logo-header.png, 
+  		href: "https://www.edx.org/course/technology-biobased-products-delftx-tbp01x", 
+  		university: TUDelft, 
+  		title: "Technology for Biobased Products", 
+  		category: "Bioreactors"
   	}
   - {
   		img: /images/documentation/ending-aging.jpg, 

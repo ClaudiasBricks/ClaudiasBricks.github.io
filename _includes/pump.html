@@ -3,7 +3,7 @@
 	
 		<div class="articles">
 			{% for post in site.posts %}
-				{% if post.categories contains 'peristaltic-pump' %}
+				{% if post.categories contains 'peristaltic-pump' reversed %}
 					<article class="post">
 				
 						<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
