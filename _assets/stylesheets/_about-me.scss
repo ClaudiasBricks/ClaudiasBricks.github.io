@@ -1,8 +1,6 @@
 .about-me {
-	
-	.fixed-section {
 	height: 700px;
-	
+	//position: fixed;
 	background-image: url(/images/gelElectrophoresisOriginal.jpg);
 	background-size: cover;
 	background-position: top center;
@@ -68,12 +66,11 @@
 			} // skill-sets
 		} // skill-sets
 	} // section
-	}// fixed-section
 }
 
 
 @media (min-width: 880px) and (max-width: $section-maxwidth - 50) {
-	.about-me .fixed-section .section {
+	.about-me .section {
 		.skill-sets {
 			justify-content: flex-start;
 			flex-wrap: wrap;
@@ -88,7 +85,7 @@
 }
 
 @media (max-width: 880px + 10) {
-	.about-me .fixed-section {
+	.about-me {
 		height: 900px;
 		background-size: auto 700px;
 		
@@ -116,5 +113,11 @@
 				}
 			}
 		}
+	}
+}
+
+@media handheld {
+	.about-me {
+		height: auto;
 	}
 }
