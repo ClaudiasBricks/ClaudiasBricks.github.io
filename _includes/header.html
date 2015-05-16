@@ -22,14 +22,16 @@
 								{% elsif brick.target %}
 
 									<a href={{ brick.target }} class="brickicon" > 
-										<span class="icon"> <i class={{ brick.icon }}></i> </span>
+										<!-- <span class="icon"> <i class={{ brick.icon }}>{{ brick.icon }}</i> </span>  -->
+										<span class="icon">{{ brick.icon }}</span>
 										<span class="text">{{ brick.text }}</span> 
 									</a>
 									
 								{% elsif brick.notarget %}
 
 									<a href="." class="nobrickicon" > 
-										<span class="icon"> <i class={{ brick.icon }}></i> </span>
+										<!-- <span class="icon"> <i class={{ brick.icon }}></i> </span>  -->
+										<span class="icon">{{ brick.icon }}</span> 
 										<span class="text">{{ brick.text }}</span> 
 									</a>
 									

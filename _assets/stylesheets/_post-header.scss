@@ -2,29 +2,20 @@
 	display: flex;
 	flex-direction: column;
 	
-	nav {
-		//height: 30px;
-		margin: 0;
-		padding: 0;
-		background-color: black;
-		
-		ul {
+	.banner {
+		height: 230px;
+		display: flex;
+		flex-direction: column;
+		//justify-content: center;
+		align-items: center;		
+		background-color: $myGreen2;
+
+		nav {
+			//height: 30px;
 			margin: 0;
 			padding: 0;
-			list-style-type: none;
-			display: flex;
-			flex-direction: row;
-			justify-content: space-around;
-						
-			li {
-				background-color: $myRed1;
-			}
-			
-			a {
-				margin: 0;
-				color: white;
-				padding: 0 15px;
-			}
+			width: 100%;
+			font-size: 1em;
 			
 			ul {
 				margin: 0;
@@ -32,26 +23,37 @@
 				list-style-type: none;
 				display: flex;
 				flex-direction: row;
-			
-				li {
-					background-color: $myGreen1;
+				justify-content: space-around;
+							
+				a {
+					margin: 0;
+					color: white;
 					padding: 0 15px;
 				}
-			}
-		}
-	}
 
-	.banner {
-		height: 150px;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;		
-		background-color: $myGreen2;
+				a:hover,
+				a:active {
+				    text-decoration: underline;
+				}
 				
+				ul {
+					margin: 0;
+					padding: 0;
+					list-style-type: none;
+					display: flex;
+					flex-direction: row;
+				
+					li {
+						padding: 0 15px;
+					}
+				}
+			}
+		} // nav
+
 		.banner-text {
 			border: 5px solid white;
 			padding: 10px;
+			margin-top: 50px;
 			
 			h1 {
 				padding: 0;
@@ -59,7 +61,5 @@
 				color: white;
 			}
 		}
-	}
-		
-	
+	} // banner
 }

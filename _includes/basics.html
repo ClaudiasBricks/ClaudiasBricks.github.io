@@ -1,0 +1,27 @@
+<div class="basics-container" id="basics">
+	<div class="container">
+	
+		<div class="articles">
+			{% for post in site.posts %}
+				{% if post.categories contains 'basics' %}
+					<article class="post">
+				
+						<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+				
+						<div class="entry">
+							{{ post.excerpt | remove: '</p>' }}
+							
+							<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+						</div>
+	
+				    </article>
+			    {% endif %}
+			{% endfor %}
+		</div>
+		
+		<div class="image">
+			<img src="{{ site.baseurl }}/images/basics/switch.jpg"/>
+		</div>
+
+	</div>	
+</div>

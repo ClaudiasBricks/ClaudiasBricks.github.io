@@ -25,29 +25,34 @@ myGreen1:        &myGreen1        "#33cc66"
 myGreen2:        &myGreen2        "#339a66"
 myRed1:          &myRed1          "#f84e42"
 
+iconHome: &iconHome  🏠
+iconInfo: &iconInfo  🎤
+iconLab:  &iconLab   📝
+iconNA:   &iconNA    👏
+
 bricklists:
   - 
-    - {target: "./", icon: icon-home, text: Home, color: *myPomegranate}
+    - {target: "./", icon: *iconHome, text: Home, color: *myPomegranate}
   -
-    - {target: "#about-me", icon: icon-blog, text: About me, color: *myPomegranate}
+    - {target: "#about-me", icon: *iconInfo, text: About me, color: *myPomegranate}
     - {image: /images/avatar.jpg}
   - {title: BioHack Academy}
   -
-    - {active: true, target: "#incubator", icon: icon-services, text: Incubator, color: *myGreen1}
+    - {active: true, target: "#incubator", icon: *iconLab, text: Incubator, color: *myGreen1}
     - {image: /images/incubator/incubatorProxy.png}
     - {image: /images/incubator/fanProxy.png}
   -
     - {image: /images/centrifuge/centrifugeProxy.png}
-    - {active: true, notarget: "#incubator", icon: icon-services, text: Centrifuge, color: *myGreen1}
+    - {active: true, notarget: "#incubator", icon: *iconNA, text: Centrifuge, color: *myGreen1}
     - {image: /images/centrifuge/rotorPrintedProxy.jpg}
     - {image: /images/peristalticPump/laserCutterProxy.jpg}
     - {image: /images/peristalticPump/lcdProxy.jpg}
-    - {active: true, target: "#pump", icon: icon-services, text: Peristaltic Pump, color: *myGreen2}
+    - {active: true, target: "#pump", icon: *iconLab, text: Peristaltic Pump, color: *myGreen2}
     - {image: /images/peristalticPump/peristalticPumpProxy.jpg}
   - 
     - {image: /images/spectrometer/spectrometerProxy.jpg}
-    - {active: true, notarget: "#incubator", icon: icon-services, text: Spectrometer, color: *myGreen2}
+    - {active: true, notarget: "#incubator", icon: *iconNA, text: Spectrometer, color: *myGreen2}
     - {image: /images/magneticStirrer/magneticStirrerProxy.jpg}
-    - {active: true, notarget: "#incubator", icon: icon-services, text: Magnetic Stirrer, color: *myGreen1}
+    - {active: true, notarget: "#incubator", icon: *iconNA, text: Magnetic Stirrer, color: *myGreen1}
     -
  

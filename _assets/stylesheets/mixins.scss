@@ -6,7 +6,7 @@
 	transition: color .5s, background .5s, height .5s, outline .5s;
 }
 
-@mixin headermediascale($brickWidth, $brickHeight, $titleFont, $brickFontText, $brickFont, $brickFontIcon) {
+@mixin headermediascale($brickWidth, $brickHeight, $titleFont, $brickFontText, $brickFontIcon) {
 	.header-container .nav .bricklists {
 		max-width: 8 * $brickWidth;
 		
@@ -27,11 +27,7 @@
 					display: flex;
 					flex-direction: row;
 					justify-content: center;
-					font-size: $brickFont;
-					
-					i {
-						font-size: $brickFontIcon;
-					}
+					font-size: $brickFontIcon;
 				} // icon
 			} // brick
 		} // bricklist

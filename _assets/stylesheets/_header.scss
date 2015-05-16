@@ -149,11 +149,7 @@
 							display: flex;
 							flex-direction: row;
 							justify-content: center;
-							font-size: $brickFont;
-							
-							i {
-								font-size: $brickFontIcon;
-							}
+							font-size: $brickFontIcon;
 						}
 					}
 				}
@@ -195,15 +191,15 @@
 	
 	
 @media (min-width: 8 * $brickWidthMedium) and (max-width: 8 * $brickWidth + 10) {
-	@include headermediascale($brickWidthMedium, $brickHeightMedium, $titleFontMedium, $brickFontTextMedium, $brickFontMedium, $brickFontIconMedium);
+	@include headermediascale($brickWidthMedium, $brickHeightMedium, $titleFontMedium, $brickFontTextMedium, $brickFontIconMedium);
 }
 
 @media (min-width: 8 * $brickWidthSmall) and (max-width: 8 * $brickWidthMedium + 10) {
-	@include headermediascale($brickWidthSmall, $brickHeightSmall, $titleFontSmall, $brickFontTextSmall, $brickFontSmall, $brickFontIconSmall);
+	@include headermediascale($brickWidthSmall, $brickHeightSmall, $titleFontSmall, $brickFontTextSmall, $brickFontIconSmall);
 }
 
 @media (max-width: 8 * $brickWidthSmall + 10) {
-	@include headermediascale($brickWidthSmall, $brickHeightSmall, $titleFontSmall, $brickFontTextSmall, $brickFontSmall, $brickFontIconSmall);
+	@include headermediascale($brickWidthSmall, $brickHeightSmall, $titleFontSmall, $brickFontTextSmall, $brickFontIconSmall);
 	
 	.header-container .nav { 
 		.bricklists,
