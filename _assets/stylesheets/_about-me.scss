@@ -87,7 +87,8 @@
 @media (max-width: 880px + 10) {
 	.about-me {
 		height: 900px;
-		background-size: auto 700px;
+		//background-size: auto 700px;
+		background-size: contain;
 		
 		.section {
 			.description h4 {
@@ -113,11 +114,5 @@
 				}
 			}
 		}
-	}
-}
-
-@media handheld {
-	.about-me {
-		height: auto;
 	}
 }
