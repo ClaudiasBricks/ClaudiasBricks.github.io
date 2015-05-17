@@ -36,23 +36,27 @@ bricklists:
   -
     - {target: "#about-me", icon: *iconInfo, text: About me, color: *myPomegranate}
     - {image: /images/avatar.jpg}
-  - {title: BioHack Academy}
+  - {title: BioHack Academy}    
   -
-    - {active: true, target: "#incubator", icon: *iconLab, text: Incubator, color: *myGreen1}
+    - {active: true, target: "#basics", icon: *iconLab, text: Basics, color: *myGreen1}
     - {image: /images/incubator/incubatorProxy.png}
     - {image: /images/incubator/fanProxy.png}
+    - {active: true, target: "#incubator", icon: *iconLab, text: Incubator, color: *myGreen1}
   -
     - {image: /images/centrifuge/centrifugeProxy.png}
     - {active: true, notarget: "#incubator", icon: *iconNA, text: Centrifuge, color: *myGreen1}
     - {image: /images/centrifuge/rotorPrintedProxy.jpg}
-    - {image: /images/peristalticPump/laserCutterProxy.jpg}
     - {image: /images/peristalticPump/lcdProxy.jpg}
     - {active: true, target: "#pump", icon: *iconLab, text: Peristaltic Pump, color: *myGreen2}
     - {image: /images/peristalticPump/peristalticPumpProxy.jpg}
+    - {image: /images/peristalticPump/laserCutterProxy.jpg}
+    -
   - 
+    -
+    -
     - {image: /images/spectrometer/spectrometerProxy.jpg}
     - {active: true, notarget: "#incubator", icon: *iconNA, text: Spectrometer, color: *myGreen2}
     - {image: /images/magneticStirrer/magneticStirrerProxy.jpg}
     - {active: true, notarget: "#incubator", icon: *iconNA, text: Magnetic Stirrer, color: *myGreen1}
     -
- 
+    -

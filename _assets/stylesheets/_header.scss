@@ -77,7 +77,6 @@
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
-		margin: 1px 0px 0px 15px;
 		
 		.bricklists {
 			max-width: 8 * $brickWidth;
@@ -94,9 +93,10 @@
 				font-size: $titleFont;
 				font-weight: bold;
 				width: 50%;
+				//width: auto;
 				display: flex;
 				flex-direction: row;
-				justify-content: flex-end;
+				justify-content: center;
 			}
 				
 			.bricklist {
@@ -169,6 +169,7 @@
 			.bricklist:nth-child(5),
 			.bricklist:nth-child(6) {
 				width: 100%;
+				//padding-left: $brickWidth / 2;
 			}
 
 			.brickicon,
@@ -190,15 +191,15 @@
 } //header-container	
 	
 	
-@media (min-width: 8 * $brickWidthMedium) and (max-width: 8 * $brickWidth + 10) {
+@media (min-width: $brickMediaScaleFactor * $brickWidthMedium) and (max-width: $brickMediaScaleFactor * $brickWidth + 10) {
 	@include headermediascale($brickWidthMedium, $brickHeightMedium, $titleFontMedium, $brickFontTextMedium, $brickFontIconMedium);
 }
 
-@media (min-width: 8 * $brickWidthSmall) and (max-width: 8 * $brickWidthMedium + 10) {
+@media (min-width: $brickMediaScaleFactor * $brickWidthSmall) and (max-width: $brickMediaScaleFactor * $brickWidthMedium + 10) {
 	@include headermediascale($brickWidthSmall, $brickHeightSmall, $titleFontSmall, $brickFontTextSmall, $brickFontIconSmall);
 }
 
-@media (max-width: 8 * $brickWidthSmall + 10) {
+@media (max-width: $brickMediaScaleFactor * $brickWidthSmall + 10) {
 	@include headermediascale($brickWidthSmall, $brickHeightSmall, $titleFontSmall, $brickFontTextSmall, $brickFontIconSmall);
 	
 	.header-container .nav { 
@@ -216,8 +217,8 @@
 		.bricklists .bricklist:nth-child(6) {
 			height: auto;
 			width: auto;
-			padding-left: 10px;
-			padding-right: 10px;
+			//padding-left: 10px;
+			//padding-right: 10px;
 		}
 		
 		.bricklists .title { 

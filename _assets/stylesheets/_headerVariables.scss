@@ -16,13 +16,15 @@ $brickWidth:       8.8em;
 $brickHeight:      $brickWidth;
 $bottomFirstBricks:0em;
 
-$brickWidthMedium:        5.5em;
+$brickWidthMedium:        5.3em;
 $brickHeightMedium:       $brickWidthMedium;
 $bottomFirstBricksMedium: 2em;
 
 $brickWidthSmall:        4.3em;
 $brickHeightSmall:       $brickWidthSmall;
 $bottomFirstBricksSmall: 1em;
+
+$brickMediaScaleFactor:  8.5;
 
 $titleFont:            3em;
 $brickFontIcon:        2.3em;
