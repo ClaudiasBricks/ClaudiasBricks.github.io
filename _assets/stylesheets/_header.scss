@@ -227,7 +227,7 @@
 	}
 }
 
-@media (max-width: 600px) {
+@media (max-width: 550px) {
 	@include headermediascale($brickWidthSmall, $brickHeightSmall, $titleFontSmall, $brickFontTextSmall, $brickFontIconSmall);
 
 	.header-container .nav { 
