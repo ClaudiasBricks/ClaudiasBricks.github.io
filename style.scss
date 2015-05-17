@@ -310,19 +310,19 @@ nav {
 footer {
   padding: 20px 0;
   text-align: center;
+}
 
-	.copyright {
-		height: 100px;
-		background-image: url(/images/bgimage.jpg);
-		background-size: cover;
-		display: flex;
-		justify-content: flex-end;
-		align-items: flex-end;
-		
-		h5 {
-			color: white;
-			padding-right: 40px;
-		}
+.cr {
+	height: 100px;
+	background-image: url(/images/bgimage.jpg);
+	background-size: cover;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	
+	h5 {
+		color: white;
+		padding-right: 40px;
 	}
 }
 
