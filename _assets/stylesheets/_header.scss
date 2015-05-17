@@ -218,7 +218,7 @@
 			height: auto;
 			width: auto;
 		}
-
+		
 		.bricklists .title { 
 			width: 100%;
 			font-weight: normal;
@@ -249,6 +249,10 @@
 		
 		.bricklists .bricklist:nth-child(6) {
 			padding-left: $brickWidthSmall;
+		}
+		
+		.bricklists .bricklist:nth-child(4) {
+			padding-right: $brickWidthSmall;
 		}
 		
 		.bricklists .title { 
