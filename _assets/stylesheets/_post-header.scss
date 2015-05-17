@@ -63,3 +63,13 @@
 		}
 	} // banner
 }
+
+@media (max-width: 600px) {
+	.post-header-container .banner nav {
+		font-size: 0.7em;
+	}
+	
+	.post-header-container .banner .banner-text h1 {
+		font-size: 1.5em;
+	}
+}
