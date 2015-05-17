@@ -38,7 +38,7 @@ bricklists:
     - {image: /images/avatar.jpg}
   - {title: BioHack Academy}    
   -
-    - {active: true, target: "#basics", icon: *iconLab, text: Basics, color: *myGreen1}
+    - {active: true, target: "#basics", icon: *iconLab, text: Basics, color: *myGreen2}
     - {image: /images/incubator/incubatorProxy.png}
     - {image: /images/incubator/fanProxy.png}
     - {active: true, target: "#incubator", icon: *iconLab, text: Incubator, color: *myGreen1}

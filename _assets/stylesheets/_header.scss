@@ -217,8 +217,34 @@
 		.bricklists .bricklist:nth-child(6) {
 			height: auto;
 			width: auto;
-			//padding-left: 10px;
-			//padding-right: 10px;
+		}
+
+		.bricklists .title { 
+			width: 100%;
+			font-weight: normal;
+			justify-content: center;
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	@include headermediascale($brickWidthSmall, $brickHeightSmall, $titleFontSmall, $brickFontTextSmall, $brickFontIconSmall);
+
+	.header-container .nav { 
+		.bricklists,
+		.bricklists .bricklist {
+			flex-direction: row;
+			flex-wrap: wrap;
+			width: auto;
+			justify-content: center;
+		}
+		
+		.bricklists .bricklist:nth-child(1),
+		.bricklists .bricklist:nth-child(2),
+		.bricklists .bricklist:nth-child(5),
+		.bricklists .bricklist:nth-child(6) {
+			height: auto;
+			width: auto;
 		}
 		
 		.bricklists .bricklist:nth-child(6) {
@@ -231,4 +257,5 @@
 			justify-content: center;
 		}
 	}
+
 }
