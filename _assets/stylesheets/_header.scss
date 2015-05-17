@@ -221,6 +221,10 @@
 			//padding-right: 10px;
 		}
 		
+		.bricklists .bricklist:nth-child(6) {
+			padding-left: $brickWidthSmall;
+		}
+		
 		.bricklists .title { 
 			width: 100%;
 			font-weight: normal;
