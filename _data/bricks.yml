@@ -54,9 +54,9 @@ bricklists:
   - 
     -
     -
-    - {image: /images/spectrometer/spectrometerProxy.jpg}
-    - {active: true, notarget: "#incubator", icon: *iconNA, text: Spectrometer, color: *myGreen1}
+    - {active: true, notarget: "#incubator", icon: *iconNA, text: Magnetic Stirrer, color: *myGreen1}
     - {image: /images/magneticStirrer/magneticStirrerProxy.jpg}
-    - {active: true, notarget: "#incubator", icon: *iconNA, text: Magnetic Stirrer, color: *myGreen2}
+    - {active: true, notarget: "#incubator", icon: *iconNA, text: Spectrometer, color: *myGreen2}
+    - {image: /images/spectrometer/spectrometerProxy.jpg}
     -
     -
