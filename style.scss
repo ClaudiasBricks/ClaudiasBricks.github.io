@@ -318,7 +318,11 @@ footer {
 	background-size: cover;
 	display: flex;
 	justify-content: flex-end;
-	align-items: flex-end;
+	align-items: center;
+	
+	img {
+		height: 25px;
+	}
 	
 	h5 {
 		color: white;

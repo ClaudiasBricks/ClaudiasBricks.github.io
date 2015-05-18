@@ -29,45 +29,6 @@
 	justify-content: center;
 	align-items: center;
 		
-	.icon-team, .icon-blog, .icon-home, .icon-portfolio, .icon-services, .icon-contact, .icon-menu {
-		font-family: 'icomoon';
-		speak: none;
-		font-style: normal;
-		font-weight: normal;
-		font-variant: normal;
-		text-transform: none;
-		line-height: 1;
-		-webkit-font-smoothing: antialiased;
-	}
-	
-	.icon-team:before {
-		content: "\e000";
-	}
-	
-	.icon-blog:before {
-		content: "\e001";
-	}
-	
-	.icon-home:before {
-		content: "\e002";
-	}
-	
-	.icon-portfolio:before {
-		content: "\e003";
-	}
-	
-	.icon-services:before {
-		content: "\e004";
-	}
-	
-	.icon-contact:before {
-		content: "\e005";
-	}
-	
-	.icon-menu:before {
-		content: "\f0c9";
-	}
-	
 	// For all screen sizes
 	.nav {
 		margin: 0 0;
@@ -175,11 +136,12 @@
 			.brickicon,
 			.nobrickicon {
 				position: relative;
+				outline: 10px solid transparent;
 				@include transition;
 			}
 			.brickicon:hover {
 				outline: rgba(255, 255, 255, 0.5) 10px solid;
-				z-index: 100;
+				//z-index: 100;
 			}
 			.nobrickicon:hover {
 				background: $gray;
