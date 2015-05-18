@@ -2,8 +2,8 @@
 	<div class="container">
 	
 		<div class="articles">
-			{% for post in site.posts %}
-				{% if post.categories contains 'basics' reversed %}
+			{% for post in site.posts reversed %}
+				{% if post.categories contains 'basics' %}
 					<article class="post">
 				
 						<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
@@ -20,7 +20,7 @@
 		</div>
 		
 		<div class="image">
-			<img src="{{ site.baseurl }}/images/basics/switch.jpg"/>
+			<img src="{{ site.baseurl }}/images/basics/basics.jpg"/>
 		</div>
 
 	</div>	
