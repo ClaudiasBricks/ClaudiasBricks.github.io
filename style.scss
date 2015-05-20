@@ -316,9 +316,9 @@ footer {
 	height: 100px;
 	background-image: url(/images/bgimage.jpg);
 	background-size: cover;
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
+	@include flex-display;
+	@include flex-justify-end;
+	@include flex-align-items-center;
 	
 	img {
 		height: 25px;

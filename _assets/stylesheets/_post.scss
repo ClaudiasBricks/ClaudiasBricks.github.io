@@ -1,8 +1,8 @@
 .post-container {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	@include flex-display;
+  	@include flex-column;
+  	@include flex-justify-center;
+  	@include flex-align-items-center;
 	
 	.apost {
 		max-width: 800px;

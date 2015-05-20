@@ -1,13 +1,12 @@
 .post-header-container {
-	display: flex;
-	flex-direction: column;
+    @include flex-display;
+    @include flex-column;
 	
 	.banner {
 		height: 230px;
-		display: flex;
-		flex-direction: column;
-		//justify-content: center;
-		align-items: center;		
+	    @include flex-display;
+	    @include flex-column;
+	    @include flex-align-items-center;
 		background-color: $myGreen2;
 
 		nav {
@@ -21,9 +20,9 @@
 				margin: 0;
 				padding: 0;
 				list-style-type: none;
-				display: flex;
-				flex-direction: row;
-				justify-content: space-around;
+				@include flex-display;
+	    		@include flex-row;
+	    		@include flex-justify-space-around;
 							
 				a {
 					margin: 0;
@@ -40,8 +39,8 @@
 					margin: 0;
 					padding: 0;
 					list-style-type: none;
-					display: flex;
-					flex-direction: row;
+					@include flex-display;
+		    		@include flex-row;
 				
 					li {
 						padding: 0 15px;

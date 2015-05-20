@@ -24,30 +24,27 @@
 	min-height: 7 * $brickHeightSmall;
 	background-image: url(/images/bgimage.jpg);
 	background-size: cover;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
+	@include flex-display;
+	@include flex-justify-center;
+	@include flex-align-items-center;
 		
 	// For all screen sizes
 	.nav {
 		margin: 0 0;
 		max-width: 100%;
 		height: 100%;
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
+		@include flex-display;
+		@include flex-justify-center;
+		@include flex-align-items-center;
 		
 		.bricklists {
 			max-width: 8 * $brickWidth;
 			height: 100%;
-			display: flex;
-			flex-direction: row;
-			flex-wrap: wrap;
-			justify-content: space-around;
-			align-content: center;
-			align-items: center;
+			@include flex-display;
+			@include flex-wrap;
+			@include flex-justify-space-around;
+			@include flex-align-content-center;
+			@include flex-align-items-center;
 			
 			.title {
 				color: white;
@@ -55,16 +52,14 @@
 				font-weight: bold;
 				width: 50%;
 				//width: auto;
-				display: flex;
-				flex-direction: row;
-				justify-content: center;
+				@include flex-display;
+				@include flex-justify-center;
 			}
 				
 			.bricklist {
-				display: flex;
-				flex-direction: row;
-				justify-content: center;
-				flex-wrap: wrap;
+				@include flex-display;
+				@include flex-justify-center;
+				@include flex-wrap;
 				width: 50%;
 		
 				.brick {
@@ -91,11 +86,11 @@
 						padding: 0;
 						width: 100%;
 						height: 100%;
-						display: flex;
-						flex-direction: column;
-						justify-content: center;
-						align-items: center;
-						flex-wrap: wrap;
+						@include flex-display;
+						@include flex-column;
+						@include flex-justify-center;
+						@include flex-align-items-center;
+						@include flex-wrap;
 						
 						-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 						
@@ -107,9 +102,8 @@
 						}
 						
 						.icon {
-							display: flex;
-							flex-direction: row;
-							justify-content: center;
+							@include flex-display;
+							@include flex-justify-center;
 							font-size: $brickFontIcon;
 						}
 					} // a
@@ -118,12 +112,12 @@
 
 			.bricklist:nth-child(1) {
 				height: 26%;
-				justify-content: flex-start;
+				@include flex-justify-center;
 				padding-left: $brickWidth / 2;
 			}
 			.bricklist:nth-child(2) {
 				height: 26%;
-				justify-content: flex-end;
+				@include flex-justify-end;
 				padding-right: $brickWidth / 2;
 			}
 
@@ -167,10 +161,10 @@
 	.header-container .nav { 
 		.bricklists,
 		.bricklists .bricklist {
-			flex-direction: row;
-			flex-wrap: wrap;
+			@include flex-row;
+			@include flex-wrap;
 			width: auto;
-			justify-content: center;
+			@include flex-justify-center;
 		}
 		
 		.bricklists .bricklist:nth-child(1),
@@ -184,7 +178,7 @@
 		.bricklists .title { 
 			width: 100%;
 			font-weight: normal;
-			justify-content: center;
+			@include flex-justify-center;
 		}
 	}
 }
@@ -195,10 +189,10 @@
 	.header-container .nav { 
 		.bricklists,
 		.bricklists .bricklist {
-			flex-direction: row;
-			flex-wrap: wrap;
+			@include flex-row;
+			@include flex-wrap;
+			@include flex-justify-center;
 			width: auto;
-			justify-content: center;
 		}
 		
 		.bricklists .bricklist:nth-child(1),
@@ -220,7 +214,7 @@
 		.bricklists .title { 
 			width: 100%;
 			font-weight: normal;
-			justify-content: center;
+			@include flex-justify-center;
 		}
 	}
 

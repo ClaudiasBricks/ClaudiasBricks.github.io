@@ -1,25 +1,25 @@
 .courses-container {
+	max-height: 470px;
+	min-height: 470px;
 	height: 470px;
-	display: flex;
-	justify-content: center;
+	@include flex-display;
+	@include flex-justify-center;
 	margin: 20px 0;
 }
 
 .courses-section {
     width: $section-maxwidth;
-    display: flex;
-    justify-content: flex-start;
-    flex-flow: column wrap;
-	//background: #999;
+    @include flex-display;
+	@include flex-justify-start;
+    @include flex-column;
+    @include flex-wrap;
 }
 
 .course {
 	width: 50%;
-	display: flex;
-	flex-flow: row;
-	//background: #00F;
-	align-items: center;
-	justify-content: flex-start;
+	@include flex-display;
+	@include flex-justify-start;
+	@include flex-align-items-center;
 	padding-left: 40px;
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -36,10 +36,10 @@
 	}
 	
 	.course-info {
-		display: flex;
-		flex-flow: column;
-		align-items: flex-start;
-		justify-content: space-between;
+		@include flex-display;
+		@include flex-column;
+		@include flex-align-items-start;
+		@include flex-justify-space-between;
 		font-size: 0.7em;
 		//background: #999;
 		
