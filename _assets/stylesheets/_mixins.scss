@@ -95,11 +95,11 @@
 }
 
 @mixin transition {
-	-webkit-transition: color .5s, background .5s, height .5s, outline .5s;
-	-moz-transition: color .5s, background .5s, height .5s, outline .5s;
-	-o-transition: color .5s, background .5s, height .5s, outline .5s;
-	-ms-transition: color .5s, background .5s, height .5s, outline .5s;
-	transition: color .5s, background .5s, height .5s, outline .5s;
+	-webkit-transition: color 1s, background 1s, height 1s, outline 1s;
+	-moz-transition: color 1s, background 1s, height 1s, outline 1s;
+	-o-transition: color 1s, background 1s, height 1s, outline 1s;
+	-ms-transition: color 1s, background 1s, height 1s, outline 1s;
+	transition: color 1s, background 1s, height 1s, outline 1s;
 }
 
 @mixin headermediascale($brickWidth, $brickHeight, $titleFont, $brickFontText, $brickFontIcon) {
